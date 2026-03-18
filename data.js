@@ -92,7 +92,7 @@ const POKEMON_DATA = {
     { "name": "미끄래곤", "nameEn": "Goodra", "category": "ultra", "fast": ["드래곤브레스", "물대포"], "charged": ["파워휩", "머디워터"], "note": "드래곤, 다양한 기술배치" },
     { "name": "눈설왕", "nameEn": "Abomasnow", "category": "ultra", "fast": ["눈싸라기", "면도날잎"], "charged": ["날씨볼", "에너지볼"], "note": "풀/얼음, 빠른 차지무브" },
     { "name": "쏘콘", "nameEn": "Escavalier", "category": "ultra", "fast": ["카운터", "벌레먹기"], "charged": ["메가호른", "드릴캐논"], "note": "벌레/강철" },
-    { "name": "해피너스", "nameEn": "Blissey", "category": "ultra", "fast": ["짓찧기", "선취"], "charged": ["사이코키네시스", "매지컬샤인"], "note": "극탱커, 타임아웃 전략" },
+    { "name": "해피너스", "nameEn": "Blissey", "category": "ultra", "fast": ["짓찧기", "선취"], "charged": ["사이코키네시스", "매지컬샤인"], "note": "체육관 방어 전용, 극탱커" },
     { "name": "플라이곤", "nameEn": "Flygon", "category": "ultra", "fast": ["머드샷", "드래곤테일"], "charged": ["드래곤크루", "대지의힘"], "note": "땅/드래곤, 접근성 좋음" },
     { "name": "팬텀", "nameEn": "Gengar", "category": "ultra", "fast": ["섀도우크루", "독찌르기"], "charged": ["섀도우볼", "섀도우펀치"], "note": "섀도우 추천, 유리대포" },
     { "name": "무장조", "nameEn": "Heracross", "category": "ultra", "fast": ["카운터", "분노의앞니"], "charged": ["메가호른", "인파이트"], "note": "벌레/격투, 지역 한정" },
@@ -131,7 +131,7 @@ const POKEMON_DATA = {
     { "name": "마루마인(히스이)", "nameEn": "Electrode (Hisuian)", "category": "super", "fast": ["볼트체인지", "선더쇼크"], "charged": ["에너지볼", "와일드볼트"], "note": "히스이폼, 전기/풀" },
     { "name": "프리져(가라르)", "nameEn": "Articuno (Galarian)", "category": "super", "fast": ["사이코커터", "혼란"], "charged": ["미래예지", "고대의힘"], "note": "가라르폼, 전설" },
     { "name": "대코파스", "nameEn": "Probopass", "category": "super", "fast": ["스파크", "바위깨기"], "charged": ["매그넷봄", "스톤엣지"], "note": "바위/강철 탱커" },
-    { "name": "불카모스", "nameEn": "Volcarona", "category": "super", "fast": ["벌레먹기", "불꽃소용돌이"], "charged": ["벌레의야단법석", "오버히트"], "note": "벌레/불꽃" },
+    { "name": "불카모스", "nameEn": "Volcarona", "category": "powerup", "fast": ["벌레먹기", "불꽃소용돌이"], "charged": ["벌레의야단법석", "오버히트"], "note": "벌레/불꽃 최강급 레이드 어태커" },
 
     // === 슈퍼리그 B 티어 ===
     { "name": "뮤", "nameEn": "Mew", "category": "super", "fast": ["섀도우크루", "볼트체인지"], "charged": ["서핑", "와일드볼트"], "note": "다양한 기술셋 가능" },
@@ -158,7 +158,7 @@ const POKEMON_DATA = {
     { "name": "디안시", "nameEn": "Diancie", "category": "super", "fast": ["바위깨기", "박치기"], "charged": ["문포스", "스톤엣지"], "note": "환상 포켓몬, 바위/페어리" },
     { "name": "어흥염", "nameEn": "Incineroar", "category": "super", "fast": ["불꽃세례", "울부짖기"], "charged": ["블라스트번", "다크래리어트"], "note": "불꽃/악" },
     { "name": "마임꽁", "nameEn": "Mr. Rime", "category": "super", "fast": ["아이스샤드", "혼란"], "charged": ["아이시윈드", "사이코키네시스"], "note": "얼음/에스퍼, 가라르 마임맨 진화" },
-    { "name": "핫삼", "nameEn": "Scizor", "category": "super", "fast": ["연속자르기", "메탈크루"], "charged": ["나이트슬래시", "아이언헤드"], "note": "벌레/강철" },
+    { "name": "핫삼", "nameEn": "Scizor", "category": "powerup", "fast": ["불릿펀치", "연속자르기"], "charged": ["아이언헤드", "시저크로스"], "note": "강철/벌레 레이드 어태커, 메가진화 가능" },
     { "name": "이상해꽃", "nameEn": "Venusaur", "category": "super", "fast": ["덩굴채찍", "풀묶기"], "charged": ["하드플랜트", "헤드스매시"], "note": "커뮤데이 무브, 섀도우 추천" },
 
     // ===== Gen 1 (#1-151) 도감/버림 =====
