@@ -544,9 +544,9 @@ const POKEMON_DATA = {
     // --- 스피아 ---
     { "name": "화강돌", "nameEn": "Spiritomb", "category": "dex", "fast": [], "charged": [], "note": "희귀, 악/고스트" },
 
-    // --- 턱지충이 라인 (한카리아스는 competitive) ---
-    { "name": "턱지충이", "nameEn": "Gible", "category": "dex", "fast": [], "charged": [], "note": "턱지충이 → 한바이트 → 한카리아스" },
-    { "name": "한바이트", "nameEn": "Gabite", "category": "dex", "fast": [], "charged": [], "note": "턱지충이 → 한바이트 → 한카리아스" },
+    // --- 딥상어동 라인 (한카리아스는 competitive) ---
+    { "name": "딥상어동", "nameEn": "Gible", "category": "dex", "fast": [], "charged": [], "note": "딥상어동 → 한바이트 → 한카리아스" },
+    { "name": "한바이트", "nameEn": "Gabite", "category": "dex", "fast": [], "charged": [], "note": "딥상어동 → 한바이트 → 한카리아스" },
 
     // --- 곤율거니 (드래피온은 competitive) ---
     { "name": "곤율거니", "nameEn": "Skorupi", "category": "dex", "fast": [], "charged": [], "note": "곤율거니 → 드래피온" },
