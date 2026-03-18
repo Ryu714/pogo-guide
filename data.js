@@ -5,7 +5,7 @@ const POKEMON_DATA = {
     { "name": "카이오가", "nameEn": "Kyogre", "category": "powerup", "fast": ["폭포", "드래곤테일"], "charged": ["근원의파동", "서핑"], "note": "물 최강 어태커" },
     { "name": "그란돈", "nameEn": "Groudon", "category": "powerup", "fast": ["머드샷", "드래곤테일"], "charged": ["단애의칼", "지진"], "note": "땅 최강 어태커" },
     { "name": "루카리오", "nameEn": "Lucario", "category": "powerup", "fast": ["카운터", "발경"], "charged": ["파동탄", "인파이트"], "note": "격투 최강 어태커" },
-    { "name": "랑도로스", "nameEn": "Landorus", "category": "powerup", "fast": ["머드샷", "바위깨기"], "charged": ["지진", "대지의힘"], "note": "영수폼 추천" },
+    // 랑도로스는 아래 powerup 섹션에 통합
     { "name": "테라키온", "nameEn": "Terrakion", "category": "powerup", "fast": ["더블킥", "스매크다운"], "charged": ["스톤엣지", "인파이트"], "note": "바위 어태커" },
     { "name": "갈라도스", "nameEn": "Gyarados", "category": "powerup", "fast": ["폭포", "드래곤브레스"], "charged": ["아쿠아테일", "하이드로펌프"], "note": "메가 진화 가능" },
     { "name": "마기라스", "nameEn": "Tyranitar", "category": "powerup", "fast": ["물기", "스매크다운"], "charged": ["스톤엣지", "깨물어부수기"], "note": "메가 진화 가능" },
@@ -40,13 +40,13 @@ const POKEMON_DATA = {
     { "name": "램펄드", "nameEn": "Rampardos", "category": "powerup", "fast": ["스매크다운","선취"], "charged": ["스톤엣지","역린"], "note": "바위 최강 DPS, 유리대포" },
     { "name": "히드런", "nameEn": "Heatran", "category": "powerup", "fast": ["불꽃소용돌이","벌레먹기"], "charged": ["마그마스톰","아이언헤드"], "note": "불꽃 어태커" },
     { "name": "몰드류", "nameEn": "Excadrill", "category": "powerup", "fast": ["진흙뿌리기","메탈크루"], "charged": ["뜨거운모래","아이언헤드"], "note": "땅/강철 듀얼 어태커" },
-    { "name": "랑도로스(영수)", "nameEn": "Landorus (Therian)", "category": "powerup", "fast": ["머드샷","바위깨기"], "charged": ["지진","대지의힘"], "note": "땅 어태커, 마스터리그 A티어" },
+    { "name": "랑도로스", "nameEn": "Landorus", "category": "powerup", "fast": ["머드샷","바위깨기"], "charged": ["지진","대지의힘"], "note": "영수폼 추천, 땅 어태커, 마스터리그 A티어" },
     { "name": "잠만보", "nameEn": "Snorlax", "category": "powerup", "fast": ["핥기","선취"], "charged": ["바디슬램","지진"], "note": "노말 탱커, 마스터리그" },
     { "name": "멜메탈", "nameEn": "Melmetal", "category": "powerup", "fast": ["전기쇼크","볼트체인지"], "charged": ["10만볼트","스톤엣지"], "note": "강철 탱커, 마스터리그 A티어" },
     { "name": "님피아", "nameEn": "Sylveon", "category": "powerup", "fast": ["매지컬샤인","전광석화"], "charged": ["문블라스트","사이코쇼크"], "note": "페어리 어태커" },
 
     // ===== 울트라리그 (Ultra League) S 티어 =====
-    { "name": "기라티나(어나더)", "nameEn": "Giratina (Altered)", "category": "ultra", "fast": ["섀도우크루", "드래곤브레스"], "charged": ["드래곤크루", "고대의힘"], "note": "울트라리그 1위, 어나더폼 필수" },
+    { "name": "기라티나", "nameEn": "Giratina", "category": "ultra", "fast": ["섀도우크루", "드래곤브레스"], "charged": ["드래곤크루", "섀도우포스"], "note": "어나더폼: 울트라리그 탱커 / 오리진폼: 고스트 어태커" },
     { "name": "레지스틸", "nameEn": "Registeel", "category": "ultra", "fast": ["록온", "메탈크루"], "charged": ["기합구슬", "자핑캐논"], "note": "극탱커, 자핑캐논 추천" },
     { "name": "크레세리아", "nameEn": "Cresselia", "category": "ultra", "fast": ["사이코커터", "염동력"], "charged": ["문블라스트", "풀묶기"], "note": "탱커, 문블라스트 필수" },
     { "name": "뚜벅초", "nameEn": "Trevenant", "category": "ultra", "fast": ["섀도우크루", "씨뿌리기"], "charged": ["씨폭탄", "섀도우볼"], "note": "XL 사탕 필요, 풀/고스트" },
@@ -55,7 +55,7 @@ const POKEMON_DATA = {
     { "name": "코발리온", "nameEn": "Cobalion", "category": "ultra", "fast": ["더블킥", "메탈크루"], "charged": ["성스러운검", "스톤엣지"], "note": "강철/격투, 밸런스형" },
     { "name": "물짱이", "nameEn": "Swampert", "category": "ultra", "fast": ["머드샷", "물대포"], "charged": ["하이드로캐논", "지진"], "note": "커뮤데이 기술 필수, 물/땅" },
     { "name": "블래키", "nameEn": "Umbreon", "category": "ultra", "fast": ["울부짖기", "훼이크아웃"], "charged": ["파울플레이", "라스트리조트"], "note": "XL 사탕 필요, 극탱커" },
-    { "name": "기라티나(오리진)", "nameEn": "Giratina (Origin)", "category": "ultra", "fast": ["섀도우크루", "드래곤테일"], "charged": ["섀도우볼", "오멀쫄쫄"], "note": "오리진폼, 공격형" },
+    // 기라티나(오리진)은 위 기라티나 엔트리에 합침
 
     // ===== 울트라리그 (Ultra League) A 티어 =====
     { "name": "갸라도스", "nameEn": "Gyarados", "category": "ultra", "fast": ["드래곤브레스", "폭포"], "charged": ["아쿠아테일", "깨물어부수기"], "note": "CP 2500 이하 육성, 접근성 좋음" },
@@ -115,7 +115,7 @@ const POKEMON_DATA = {
 
     // === 슈퍼리그 A 티어 ===
     { "name": "니드퀸", "nameEn": "Nidoqueen", "category": "super", "fast": ["독찌르기", "독침"], "charged": ["독찔레꽂기", "대지의힘"], "note": "섀도우 추천" },
-    { "name": "랑도로스(영수폼)", "nameEn": "Landorus (Therian)", "category": "super", "fast": ["머드샷", "바위깨기"], "charged": ["대지의파워", "스톤엣지"], "note": "전설 포켓몬" },
+    { "name": "랑도로스", "nameEn": "Landorus", "category": "super", "fast": ["머드샷", "바위깨기"], "charged": ["대지의힘", "스톤엣지"], "note": "영수폼 추천, 전설 포켓몬" },
     { "name": "날쌩마(가라르)", "nameEn": "Rapidash (Galarian)", "category": "super", "fast": ["요정의바람", "사이코커터"], "charged": ["몸통박치기", "메가호른"], "note": "가라르폼, 페어리" },
     { "name": "차머드", "nameEn": "Charjabug", "category": "super", "fast": ["스파크", "벌레먹기"], "charged": ["방전", "엑스시저"], "note": "벌레/전기 탱커" },
     { "name": "라이초(알로라)", "nameEn": "Raichu (Alolan)", "category": "super", "fast": ["볼트체인지", "스파크"], "charged": ["와일드볼트", "사이코키네시스"], "note": "알로라폼" },
@@ -1349,7 +1349,7 @@ const POKEMON_DATA = {
     { "name": "메가자리", "nameEn": "Yanmega", "category": "dex", "fast": [], "charged": [], "note": "왕자리 → 메가자리 (벌레/비행)" },
     { "name": "글라이온", "nameEn": "Gliscor", "category": "dex", "fast": [], "charged": [], "note": "글라이거 → 글라이온 (땅/비행 PvP)" },
     { "name": "야느와르몽", "nameEn": "Dusknoir", "category": "dex", "fast": [], "charged": [], "note": "해골몽 → 미라몽 → 야느와르몽 (고스트)" },
-    { "name": "기라티나", "nameEn": "Giratina", "category": "dex", "fast": [], "charged": [], "note": "전설, 고스트/드래곤, 어나더/오리진 폼" },
+    // 기라티나는 울트라리그에 등록됨
     { "name": "단굴", "nameEn": "Roggenrola", "category": "dex", "fast": [], "charged": [], "note": "단굴 → 암트르 → 기가이어스 (바위)" },
     { "name": "암트르", "nameEn": "Boldore", "category": "dex", "fast": [], "charged": [], "note": "단굴 → 암트르 → 기가이어스" },
     { "name": "기가이어스", "nameEn": "Gigalith", "category": "dex", "fast": [], "charged": [], "note": "단굴 최종 진화 (바위)" },
