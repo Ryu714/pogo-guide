@@ -36,7 +36,7 @@ const POKEMON_DATA = {
     { "name": "제크로무", "nameEn": "Zekrom", "category": "powerup", "fast": ["차지빔","드래곤브레스"], "charged": ["크로스선더","역린"], "note": "전기/드래곤 어태커" },
     { "name": "이벨타르", "nameEn": "Yveltal", "category": "powerup", "fast": ["으르렁","돌풍"], "charged": ["악의파동","하이퍼빔"], "note": "악/비행 어태커" },
     { "name": "제르네아스", "nameEn": "Xerneas", "category": "powerup", "fast": ["매지컬샤인","돌진"], "charged": ["문블라스트","매지컬샤인"], "note": "페어리 어태커" },
-    { "name": "코뿌리", "nameEn": "Rhyperior", "category": "powerup", "fast": ["스매크다운","머드샷"], "charged": ["록블래스트","지진"], "note": "바위/땅 어태커, 커뮤데이 기술" },
+    { "name": "코뿌리", "nameEn": "Rhyperior", "category": "powerup", "fast": ["스매크다운","진흙뿌리기"], "charged": ["록블래스트","지진"], "note": "바위/땅 어태커, 커뮤데이 기술" },
     { "name": "램펄드", "nameEn": "Rampardos", "category": "powerup", "fast": ["스매크다운","선취"], "charged": ["스톤엣지","역린"], "note": "바위 최강 DPS, 유리대포" },
     { "name": "히드런", "nameEn": "Heatran", "category": "powerup", "fast": ["불꽃소용돌이","벌레먹기"], "charged": ["마그마스톰","아이언헤드"], "note": "불꽃 어태커" },
     { "name": "몰드류", "nameEn": "Excadrill", "category": "powerup", "fast": ["진흙뿌리기","메탈크루"], "charged": ["뜨거운모래","아이언헤드"], "note": "땅/강철 듀얼 어태커" },
