@@ -100,38 +100,78 @@
   }
 
   .card-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
   }
 
   .card {
     display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 16px;
+    flex-direction: column;
+    padding: 10px;
     background: #16213e;
     border-radius: 12px;
     transition: transform 0.1s;
+    min-width: 0;
   }
 
   .card:active { transform: scale(0.98); }
 
-  .card-info { flex: 1; min-width: 0; }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 6px;
+  }
+
+  .card-info { min-width: 0; }
 
   .card-name {
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 600;
     color: #fff;
+    line-height: 1.2;
+    word-break: keep-all;
   }
 
   .card-name-en {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     color: #666;
   }
 
+  .card-moves {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 6px;
+    font-size: 0.68rem;
+  }
+
+  .card-moves-group {
+    display: flex;
+    align-items: baseline;
+    gap: 3px;
+    flex-wrap: wrap;
+  }
+
+  .move-label {
+    color: #666;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+
+  .move-name {
+    color: #ccc;
+  }
+
+  .move-rank {
+    color: #888;
+    font-size: 0.6rem;
+  }
+
   .card-note {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     color: #999;
     margin-top: 4px;
     line-height: 1.3;
@@ -139,9 +179,9 @@
 
   .badge {
     flex-shrink: 0;
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 0.75rem;
+    padding: 2px 7px;
+    border-radius: 8px;
+    font-size: 0.6rem;
     font-weight: 600;
     color: #fff;
     white-space: nowrap;
@@ -160,10 +200,8 @@
     font-size: 0.9rem;
   }
 
-  @media (max-width: 400px) {
-    .container { padding: 8px; }
-    h1 { font-size: 1.2rem; }
-    .card { padding: 10px 12px; }
+  @media (max-width: 360px) {
+    .card-list { grid-template-columns: repeat(2, 1fr); }
   }
 </style>
 </head>
@@ -189,6 +227,7 @@
   <div class="card-list" id="list"></div>
 </div>
 
+<script src="data.js"></script>
 <script>
 const CATEGORY_LABELS = {
   powerup: '강화',
@@ -202,16 +241,9 @@ let allPokemon = [];
 let currentCat = 'all';
 let currentQuery = '';
 
-async function loadData() {
-  try {
-    const res = await fetch('data.json');
-    const data = await res.json();
-    allPokemon = data.pokemon;
-    render();
-  } catch (e) {
-    document.getElementById('list').innerHTML =
-      '<div class="empty">데이터를 불러올 수 없습니다.</div>';
-  }
+function loadData() {
+  allPokemon = POKEMON_DATA.pokemon;
+  render();
 }
 
 function render() {
@@ -236,14 +268,37 @@ function render() {
 
   list.innerHTML = filtered.map(p => `
     <div class="card">
-      <div class="card-info">
-        <div class="card-name">${escapeHtml(p.name)}</div>
-        <div class="card-name-en">${escapeHtml(p.nameEn)}</div>
-        ${p.note ? `<div class="card-note">${escapeHtml(p.note)}</div>` : ''}
+      <div class="card-header">
+        <div class="card-info">
+          <div class="card-name">${escapeHtml(p.name)}</div>
+          <div class="card-name-en">${escapeHtml(p.nameEn)}</div>
+        </div>
+        <span class="badge badge-${p.category}">${CATEGORY_LABELS[p.category]}</span>
       </div>
-      <span class="badge badge-${p.category}">${CATEGORY_LABELS[p.category]}</span>
+      ${renderMoves(p)}
+      ${p.note ? `<div class="card-note">${escapeHtml(p.note)}</div>` : ''}
     </div>
   `).join('');
+}
+
+function renderMoves(p) {
+  const fast = p.fast || [];
+  const charged = p.charged || [];
+  if (fast.length === 0 && charged.length === 0) return '';
+
+  const formatMoves = (moves) => moves.map((m, i) =>
+    `<span class="move-name">${escapeHtml(m)}</span>${i === 0 && moves.length > 1 ? '<span class="move-rank"> / </span>' : ''}`
+  ).join('');
+
+  let html = '<div class="card-moves">';
+  if (fast.length > 0) {
+    html += `<div class="card-moves-group"><span class="move-label">노말</span>${formatMoves(fast)}</div>`;
+  }
+  if (charged.length > 0) {
+    html += `<div class="card-moves-group"><span class="move-label">스페셜</span>${formatMoves(charged)}</div>`;
+  }
+  html += '</div>';
+  return html;
 }
 
 function escapeHtml(text) {
