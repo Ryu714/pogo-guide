@@ -255,7 +255,8 @@ function render() {
   const q = currentQuery.toLowerCase();
 
   const filtered = allPokemon.filter(p => {
-    const matchCat = currentCat === 'all' || p.category === currentCat;
+    const cats = Array.isArray(p.category) ? p.category : [p.category];
+    const matchCat = currentCat === 'all' || cats.includes(currentCat);
     const matchSearch = !q ||
       p.name.toLowerCase().includes(q) ||
       p.nameEn.toLowerCase().includes(q);
@@ -276,7 +277,7 @@ function render() {
           <div class="card-name">${escapeHtml(p.name)}</div>
           <div class="card-name-en">${escapeHtml(p.nameEn)}</div>
         </div>
-        <span class="badge badge-${p.category}">${CATEGORY_LABELS[p.category]}</span>
+        ${(Array.isArray(p.category) ? p.category : [p.category]).map(c => `<span class="badge badge-${c}">${CATEGORY_LABELS[c]}</span>`).join(' ')}
       </div>
       ${renderMoves(p)}
       ${p.note ? `<div class="card-note">${escapeHtml(p.note)}</div>` : ''}
