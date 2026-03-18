@@ -540,8 +540,8 @@ const POKEMON_DATA = {
     // --- 흘림보디 (둥실라이드는 competitive) ---
     { "name": "흘림보디", "nameEn": "Drifloon", "category": "dex", "fast": [], "charged": [], "note": "흘림보디 → 둥실라이드" },
 
-    // --- 토끼롤 (이어롭/메가이어롭은 competitive) ---
-    { "name": "토끼롤", "nameEn": "Buneary", "category": "dex", "fast": [], "charged": [], "note": "토끼롤 → 이어롭 (메가진화 가능)" },
+    // --- 이어롤 (이어롭/메가이어롭은 competitive) ---
+    { "name": "이어롤", "nameEn": "Buneary", "category": "dex", "fast": [], "charged": [], "note": "이어롤 → 이어롭 (메가진화 가능)" },
 
 
     // --- 대포무노 ---
@@ -1047,8 +1047,8 @@ const POKEMON_DATA = {
     { "name": "형사구스", "nameEn": "Gumshoos", "category": "trash", "fast": [], "charged": [], "note": "" },
     { "name": "콧충이", "nameEn": "Grubbin", "category": "dex", "fast": [], "charged": [], "note": "콧충이 → 전지충이 → 차머드" },
     { "name": "크와가충이", "nameEn": "Vikavolt", "category": "dex", "fast": [], "charged": [], "note": "전지충이 최종 진화 (벌레/전기)" },
-    { "name": "나이틀리", "nameEn": "Pikipek", "category": "trash", "fast": [], "charged": [], "note": "나이틀리 → 케이크날개 → 왕큰부리" },
-    { "name": "케이크날개", "nameEn": "Trumbeak", "category": "trash", "fast": [], "charged": [], "note": "" },
+    { "name": "콕코구리", "nameEn": "Pikipek", "category": "trash", "fast": [], "charged": [], "note": "콕코구리 → 크라파 → 왕큰부리" },
+    { "name": "크라파", "nameEn": "Trumbeak", "category": "trash", "fast": [], "charged": [], "note": "" },
     { "name": "왕큰부리", "nameEn": "Toucannon", "category": "trash", "fast": [], "charged": [], "note": "노말/비행" },
     { "name": "망키", "nameEn": "Crabrawler", "category": "dex", "fast": [], "charged": [], "note": "망키 → 맨쿠마" },
     { "name": "맨쿠마", "nameEn": "Crabominable", "category": "dex", "fast": [], "charged": [], "note": "격투/얼음" },
