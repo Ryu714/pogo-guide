@@ -151,7 +151,7 @@ const POKEMON_DATA = {
     { "name": "독개굴(섀도우)", "nameEn": "Toxicroak (Shadow)", "category": "super", "fast": ["카운터", "독찌르기"], "charged": ["머드밤", "폭발펀치"], "note": "섀도우, 격투/독" },
     { "name": "폴리곤Z", "nameEn": "Porygon-Z", "category": "super", "fast": ["록온", "차지빔"], "charged": ["트라이어택", "냉동빔"], "note": "커뮤데이 무브 추천" },
     // 라티아스는 powerup에 등록됨
-    { "name": "로토무", "nameEn": "Wash Rotom", "category": "super", "fast": ["선더쇼크", "놀래키기"], "charged": ["하이드로펌프", "10만볼트"], "note": "전기/물" },
+    { "name": "워시로토무", "nameEn": "Wash Rotom", "category": "super", "fast": ["선더쇼크", "놀래키기"], "charged": ["하이드로펌프", "10만볼트"], "note": "전기/물" },
     { "name": "블래키", "nameEn": "Umbreon", "category": "super", "fast": ["으르렁", "속이기"], "charged": ["파울플레이", "라스트리조트"], "note": "XL사탕 필요, 악 탱커" },
     { "name": "갸라도스(섀도우)", "nameEn": "Gyarados (Shadow)", "category": "super", "fast": ["드래곤브레스", "폭포"], "charged": ["아쿠아테일", "깨물어부수기"], "note": "섀도우, 물/비행" },
     { "name": "눈설왕(섀도우)", "nameEn": "Abomasnow (Shadow)", "category": "super", "fast": ["가루눈", "면도날잎"], "charged": ["웨더볼(얼음)", "에너지볼"], "note": "섀도우 추천, 풀/얼음" },
@@ -216,7 +216,7 @@ const POKEMON_DATA = {
     { "name": "발챙이", "nameEn": "Poliwag", "category": "dex", "fast": [], "charged": [], "note": "발챙이 → 슈륙챙이 → 강챙이/왕구리 (킹스락)" },
     { "name": "슈륙챙이", "nameEn": "Poliwhirl", "category": "dex", "fast": [], "charged": [], "note": "발챙이 → 슈륙챙이 → 강챙이 or 왕구리" },
     { "name": "왕구리", "nameEn": "Politoed", "category": "dex", "fast": [], "charged": [], "note": "킹스락 진화, 도감용" },
-    { "name": "케이시", "nameEn": "Abra", "category": "dex", "fast": [], "charged": [], "note": "케이시 → 윤겔라 → 후딘 (에스퍼 어태커)" },
+    { "name": "캐이시", "nameEn": "Abra", "category": "dex", "fast": [], "charged": [], "note": "케이시 → 윤겔라 → 후딘 (에스퍼 어태커)" },
     { "name": "윤겔라", "nameEn": "Kadabra", "category": "dex", "fast": [], "charged": [], "note": "케이시 → 윤겔라 → 후딘" },
     { "name": "알통몬", "nameEn": "Machop", "category": "dex", "fast": [], "charged": [], "note": "알통몬 → 근육몬 → 괴력몬 (격투 어태커)" },
     { "name": "근육몬", "nameEn": "Machoke", "category": "dex", "fast": [], "charged": [], "note": "알통몬 → 근육몬 → 괴력몬" },
@@ -333,7 +333,7 @@ const POKEMON_DATA = {
     { "name": "니로우", "nameEn": "Murkrow", "category": "dex", "fast": [], "charged": [], "note": "니로우 → 돈크로우 (Gen4, 어둠의돌)" },
     { "name": "무우마", "nameEn": "Misdreavus", "category": "dex", "fast": [], "charged": [], "note": "무우마 → 무우마직 (어둠의돌)" },
     { "name": "안농", "nameEn": "Unown", "category": "dex", "fast": [], "charged": [], "note": "28종 폼, 매우 희귀, 수집용" },
-    { "name": "소시지", "nameEn": "Wobbuffet", "category": "dex", "fast": [], "charged": [], "note": "마자용 → 소시지 (에스퍼)" },
+    { "name": "마자용", "nameEn": "Wobbuffet", "category": "dex", "fast": [], "charged": [], "note": "마자용 → 소시지 (에스퍼)" },
     { "name": "키링키", "nameEn": "Girafarig", "category": "dex", "fast": [], "charged": [], "note": "키링키 → 리링키 (Gen9 진화)" },
     { "name": "피콘", "nameEn": "Pineco", "category": "dex", "fast": [], "charged": [], "note": "피콘 → 쏘콘 (벌레/강철)" },
     { "name": "노고치", "nameEn": "Dunsparce", "category": "trash", "fast": [], "charged": [], "note": "" },
@@ -386,8 +386,8 @@ const POKEMON_DATA = {
     { "name": "독케일", "nameEn": "Dustox", "category": "trash", "fast": [], "charged": [], "note": "" },
     { "name": "연꽃몬", "nameEn": "Lotad", "category": "dex", "fast": [], "charged": [], "note": "연꽃몬 → 로토스 → 루디꼴로" },
     { "name": "로토스", "nameEn": "Lombre", "category": "dex", "fast": [], "charged": [], "note": "연꽃몬 → 로토스 → 루디꼴로" },
-    { "name": "루디꼴로", "nameEn": "Ludicolo", "category": "dex", "fast": [], "charged": [], "note": "물/풀, 간혹 PvP 사용" },
-    { "name": "도토리", "nameEn": "Seedot", "category": "trash", "fast": [], "charged": [], "note": "도토리 → 잎새코 → 다탱구" },
+    { "name": "로파파", "nameEn": "Ludicolo", "category": "dex", "fast": [], "charged": [], "note": "물/풀, 간혹 PvP 사용" },
+    { "name": "도토링", "nameEn": "Seedot", "category": "trash", "fast": [], "charged": [], "note": "도토리 → 잎새코 → 다탱구" },
     { "name": "잎새코", "nameEn": "Nuzleaf", "category": "trash", "fast": [], "charged": [], "note": "" },
     { "name": "다탱구", "nameEn": "Shiftry", "category": "trash", "fast": [], "charged": [], "note": "" },
     { "name": "테일로", "nameEn": "Taillow", "category": "trash", "fast": [], "charged": [], "note": "테일로 → 스왈로" },
@@ -416,16 +416,16 @@ const POKEMON_DATA = {
     { "name": "가보리", "nameEn": "Aron", "category": "dex", "fast": [], "charged": [], "note": "가보리 → 갱도라 → 보스로라" },
     { "name": "갱도라", "nameEn": "Lairon", "category": "dex", "fast": [], "charged": [], "note": "가보리 → 갱도라 → 보스로라" },
     { "name": "보스로라", "nameEn": "Aggron", "category": "dex", "fast": [], "charged": [], "note": "강철/바위, 메가 진화 가능" },
-    { "name": "요가람", "nameEn": "Meditite", "category": "dex", "fast": [], "charged": [], "note": "요가람 → 요가램 (격투/에스퍼 PvP)" },
+    { "name": "요가랑", "nameEn": "Meditite", "category": "dex", "fast": [], "charged": [], "note": "요가람 → 요가램 (격투/에스퍼 PvP)" },
     { "name": "썬더라이", "nameEn": "Electrike", "category": "trash", "fast": [], "charged": [], "note": "썬더라이 → 썬더볼트" },
     { "name": "썬더볼트", "nameEn": "Manectric", "category": "trash", "fast": [], "charged": [], "note": "메가 진화 가능하지만 성능 부족" },
     { "name": "플러시", "nameEn": "Plusle", "category": "trash", "fast": [], "charged": [], "note": "전기" },
     { "name": "마이농", "nameEn": "Minun", "category": "trash", "fast": [], "charged": [], "note": "전기" },
     { "name": "볼비트", "nameEn": "Volbeat", "category": "trash", "fast": [], "charged": [], "note": "지역한정" },
-    { "name": "네온비트", "nameEn": "Illumise", "category": "trash", "fast": [], "charged": [], "note": "지역한정" },
+    { "name": "네오비트", "nameEn": "Illumise", "category": "trash", "fast": [], "charged": [], "note": "지역한정" },
     { "name": "로젤리아", "nameEn": "Roselia", "category": "dex", "fast": [], "charged": [], "note": "꼬몽울 → 로젤리아 → 로즈레이드 (풀/독)" },
-    { "name": "꿀꺽몬", "nameEn": "Gulpin", "category": "trash", "fast": [], "charged": [], "note": "꿀꺽몬 → 꿀떡몬" },
-    { "name": "꿀떡몬", "nameEn": "Swalot", "category": "trash", "fast": [], "charged": [], "note": "" },
+    { "name": "꼴깍몬", "nameEn": "Gulpin", "category": "trash", "fast": [], "charged": [], "note": "꿀꺽몬 → 꿀떡몬" },
+    { "name": "꿀꺽몬", "nameEn": "Swalot", "category": "trash", "fast": [], "charged": [], "note": "" },
     { "name": "샤프니아", "nameEn": "Carvanha", "category": "trash", "fast": [], "charged": [], "note": "샤프니아 → 샤크니아" },
     { "name": "샤크니아", "nameEn": "Sharpedo", "category": "trash", "fast": [], "charged": [], "note": "물/악, 공격 높지만 방어 최악" },
     { "name": "고래왕자", "nameEn": "Wailmer", "category": "dex", "fast": [], "charged": [], "note": "고래왕자 → 고래왕 (사탕 400개)" },
@@ -433,10 +433,10 @@ const POKEMON_DATA = {
     { "name": "둔타", "nameEn": "Numel", "category": "trash", "fast": [], "charged": [], "note": "둔타 → 폭타" },
     { "name": "폭타", "nameEn": "Camerupt", "category": "trash", "fast": [], "charged": [], "note": "불꽃/땅" },
     { "name": "코터스", "nameEn": "Torkoal", "category": "dex", "fast": [], "charged": [], "note": "인도/동남아 지역한정" },
-    { "name": "스포잉", "nameEn": "Spoink", "category": "trash", "fast": [], "charged": [], "note": "스포잉 → 피그킹" },
+    { "name": "피그점프", "nameEn": "Spoink", "category": "trash", "fast": [], "charged": [], "note": "스포잉 → 피그킹" },
     { "name": "피그킹", "nameEn": "Grumpig", "category": "trash", "fast": [], "charged": [], "note": "" },
     { "name": "얼루기", "nameEn": "Spinda", "category": "dex", "fast": [], "charged": [], "note": "다양한 패턴, 필드리서치 한정" },
-    { "name": "트랩피치", "nameEn": "Trapinch", "category": "dex", "fast": [], "charged": [], "note": "트랩피치 → 비브라바 → 플라이곤 (땅/드래곤)" },
+    { "name": "톱치", "nameEn": "Trapinch", "category": "dex", "fast": [], "charged": [], "note": "트랩피치 → 비브라바 → 플라이곤 (땅/드래곤)" },
     { "name": "비브라바", "nameEn": "Vibrava", "category": "dex", "fast": [], "charged": [], "note": "트랩피치 → 비브라바 → 플라이곤" },
     { "name": "선인왕", "nameEn": "Cacnea", "category": "trash", "fast": [], "charged": [], "note": "선인왕 → 밤선인" },
     { "name": "밤선인", "nameEn": "Cacturne", "category": "trash", "fast": [], "charged": [], "note": "" },
@@ -446,8 +446,8 @@ const POKEMON_DATA = {
     { "name": "루나톤", "nameEn": "Lunatone", "category": "trash", "fast": [], "charged": [], "note": "지역한정 (반구별)" },
     { "name": "솔록", "nameEn": "Solrock", "category": "trash", "fast": [], "charged": [], "note": "지역한정 (반구별)" },
     { "name": "미꾸리", "nameEn": "Barboach", "category": "dex", "fast": [], "charged": [], "note": "미꾸리 → 메깅 (물/땅 PvP)" },
-    { "name": "가재장군", "nameEn": "Corphish", "category": "trash", "fast": [], "charged": [], "note": "가재장군 → 가재보스" },
-    { "name": "가재보스", "nameEn": "Crawdaunt", "category": "trash", "fast": [], "charged": [], "note": "물/악" },
+    { "name": "가재군", "nameEn": "Corphish", "category": "trash", "fast": [], "charged": [], "note": "가재장군 → 가재보스" },
+    { "name": "가재장군", "nameEn": "Crawdaunt", "category": "trash", "fast": [], "charged": [], "note": "물/악" },
     { "name": "오뚝군", "nameEn": "Baltoy", "category": "trash", "fast": [], "charged": [], "note": "오뚝군 → 점토도리" },
     { "name": "점토도리", "nameEn": "Claydol", "category": "trash", "fast": [], "charged": [], "note": "땅/에스퍼" },
     { "name": "릴링", "nameEn": "Lileep", "category": "dex", "fast": [], "charged": [], "note": "릴링 → 릴리요 (화석)" },
@@ -464,7 +464,7 @@ const POKEMON_DATA = {
     { "name": "미라몽", "nameEn": "Dusclops", "category": "dex", "fast": [], "charged": [], "note": "해골몽 → 미라몽 → 야느와르몽" },
     { "name": "트로피우스", "nameEn": "Tropius", "category": "dex", "fast": [], "charged": [], "note": "아프리카/지중해 지역한정, 풀/비행" },
     { "name": "치렁", "nameEn": "Chimecho", "category": "dex", "fast": [], "charged": [], "note": "링딸랑 → 치렁 (에스퍼)" },
-    { "name": "마자용", "nameEn": "Wynaut", "category": "dex", "fast": [], "charged": [], "note": "베이비, 마자용 → 소시지" },
+    { "name": "마자", "nameEn": "Wynaut", "category": "dex", "fast": [], "charged": [], "note": "베이비, 마자용 → 소시지" },
     { "name": "눈꼬마", "nameEn": "Snorunt", "category": "dex", "fast": [], "charged": [], "note": "눈꼬마 → 얼음귀신 / 눈여아 (♀만)" },
     { "name": "대굴레오", "nameEn": "Spheal", "category": "dex", "fast": [], "charged": [], "note": "대굴레오 → 씨레오 → 월루프 (얼음/물 PvP)" },
     { "name": "씨레오", "nameEn": "Sealeo", "category": "dex", "fast": [], "charged": [], "note": "대굴레오 → 씨레오 → 월루프" },
@@ -474,7 +474,7 @@ const POKEMON_DATA = {
     { "name": "시라칸", "nameEn": "Relicanth", "category": "dex", "fast": [], "charged": [], "note": "뉴질랜드 지역한정, 바위/물" },
     { "name": "사랑동이", "nameEn": "Luvdisc", "category": "trash", "fast": [], "charged": [], "note": "물, 진화 없음" },
     { "name": "아공이", "nameEn": "Bagon", "category": "dex", "fast": [], "charged": [], "note": "아공이 → 셀라 → 보만다 (드래곤/비행 어태커)" },
-    { "name": "셀라", "nameEn": "Shelgon", "category": "dex", "fast": [], "charged": [], "note": "아공이 → 셀라 → 보만다" },
+    { "name": "쉘곤", "nameEn": "Shelgon", "category": "dex", "fast": [], "charged": [], "note": "아공이 → 셀라 → 보만다" },
     { "name": "메탕", "nameEn": "Beldum", "category": "dex", "fast": [], "charged": [], "note": "메탕 → 메탕구 → 메타그로스 (강철/에스퍼)" },
     { "name": "메탕구", "nameEn": "Metang", "category": "dex", "fast": [], "charged": [], "note": "메탕 → 메탕구 → 메타그로스" },
     { "name": "레지락", "nameEn": "Regirock", "category": "dex", "fast": [], "charged": [], "note": "전설, 바위, 레지 시리즈" },
@@ -484,7 +484,7 @@ const POKEMON_DATA = {
 
     // ===== 4세대 (신오, #387-493) Dex / Trash =====
     // --- 스타터 (토대부기/엠페르트는 competitive에 등록) ---
-    { "name": "모부기", "nameEn": "Turtwig", "category": "dex", "fast": [], "charged": [], "note": "모꼬리 → 수풀부기 → 토대부기" },
+    { "name": "모꼬리", "nameEn": "Turtwig", "category": "dex", "fast": [], "charged": [], "note": "모꼬리 → 수풀부기 → 토대부기" },
     { "name": "수풀부기", "nameEn": "Grotle", "category": "dex", "fast": [], "charged": [], "note": "모꼬리 → 수풀부기 → 토대부기" },
     { "name": "불꽃숭이", "nameEn": "Chimchar", "category": "dex", "fast": [], "charged": [], "note": "불꽃숭이 → 파이숭이 → 초염몽" },
     { "name": "파이숭이", "nameEn": "Monferno", "category": "dex", "fast": [], "charged": [], "note": "불꽃숭이 → 파이숭이 → 초염몽" },
@@ -538,7 +538,7 @@ const POKEMON_DATA = {
     { "name": "겟핸보숭", "nameEn": "Ambipom", "category": "dex", "fast": [], "charged": [], "note": "에이팜 → 에테보스" },
 
     // --- 흘림보디 (둥실라이드는 competitive) ---
-    { "name": "흔들풍손", "nameEn": "Drifloon", "category": "dex", "fast": [], "charged": [], "note": "흘림보디 → 둥실라이드" },
+    { "name": "흘림보디", "nameEn": "Drifloon", "category": "dex", "fast": [], "charged": [], "note": "흘림보디 → 둥실라이드" },
 
     // --- 이어롤 (이어롭/메가이어롭은 competitive) ---
     { "name": "이어롤", "nameEn": "Buneary", "category": "dex", "fast": [], "charged": [], "note": "이어롤 → 이어롭 (메가진화 가능)" },
@@ -558,26 +558,26 @@ const POKEMON_DATA = {
     { "name": "핑복", "nameEn": "Happiny", "category": "dex", "fast": [], "charged": [], "note": "핑복 → 럭키 → 해피너스 (베이비)" },
 
     // --- 챠밍 ---
-    { "name": "페라페", "nameEn": "Chatot", "category": "dex", "fast": [], "charged": [], "note": "지역한정 (남반구), 진화 없음" },
+    { "name": "챠밍", "nameEn": "Chatot", "category": "dex", "fast": [], "charged": [], "note": "지역한정 (남반구), 진화 없음" },
 
     // --- 스피아 ---
     { "name": "화강돌", "nameEn": "Spiritomb", "category": "dex", "fast": [], "charged": [], "note": "희귀, 악/고스트" },
 
     // --- 턱지충이 라인 (한카리아스는 competitive) ---
-    { "name": "딥상어동", "nameEn": "Gible", "category": "dex", "fast": [], "charged": [], "note": "턱지충이 → 한바이트 → 한카리아스" },
+    { "name": "턱지충이", "nameEn": "Gible", "category": "dex", "fast": [], "charged": [], "note": "턱지충이 → 한바이트 → 한카리아스" },
     { "name": "한바이트", "nameEn": "Gabite", "category": "dex", "fast": [], "charged": [], "note": "턱지충이 → 한바이트 → 한카리아스" },
 
     // --- 곤율거니 (드래피온은 competitive) ---
-    { "name": "스콜피", "nameEn": "Skorupi", "category": "dex", "fast": [], "charged": [], "note": "곤율거니 → 드래피온" },
+    { "name": "곤율거니", "nameEn": "Skorupi", "category": "dex", "fast": [], "charged": [], "note": "곤율거니 → 드래피온" },
 
     // --- 삐딱충이 (독개굴은 competitive) ---
-    { "name": "삐딱구리", "nameEn": "Croagunk", "category": "dex", "fast": [], "charged": [], "note": "삐딱충이 → 독개굴" },
+    { "name": "삐딱충이", "nameEn": "Croagunk", "category": "dex", "fast": [], "charged": [], "note": "삐딱충이 → 독개굴" },
 
     // --- 무스틈니 ---
     { "name": "무스틈니", "nameEn": "Carnivine", "category": "dex", "fast": [], "charged": [], "note": "지역한정, 진화 없음" },
 
     // --- 핀프리 라인 ---
-    { "name": "형광어", "nameEn": "Finneon", "category": "trash", "fast": [], "charged": [], "note": "" },
+    { "name": "핀프리", "nameEn": "Finneon", "category": "trash", "fast": [], "charged": [], "note": "" },
     { "name": "네오라이트", "nameEn": "Lumineon", "category": "trash", "fast": [], "charged": [], "note": "" },
 
     // --- 스컹뿡 라인 ---
@@ -589,17 +589,17 @@ const POKEMON_DATA = {
     { "name": "동탁군", "nameEn": "Bronzong", "category": "dex", "fast": [], "charged": [], "note": "강철/에스퍼" },
 
     // --- 마네네 (베이비) ---
-    { "name": "꼬지지", "nameEn": "Bonsly", "category": "dex", "fast": [], "charged": [], "note": "마네네 → 꼬지모 (베이비)" },
+    { "name": "마네네", "nameEn": "Bonsly", "category": "dex", "fast": [], "charged": [], "note": "마네네 → 꼬지모 (베이비)" },
 
     // --- 흔들란 (베이비) ---
-    { "name": "랑딸랑", "nameEn": "Chingling", "category": "dex", "fast": [], "charged": [], "note": "흔들란 → 치렁 (베이비)" },
+    { "name": "흔들란", "nameEn": "Chingling", "category": "dex", "fast": [], "charged": [], "note": "흔들란 → 치렁 (베이비)" },
 
     // --- 히포포타스 라인 ---
     { "name": "히포포타스", "nameEn": "Hippopotas", "category": "dex", "fast": [], "charged": [], "note": "히포포타스 → 하마돈" },
     { "name": "하마돈", "nameEn": "Hippowdon", "category": "dex", "fast": [], "charged": [], "note": "히포포타스 → 하마돈, 땅" },
 
     // --- 코리갑 (눈설왕은 competitive) ---
-    { "name": "눈쓰개", "nameEn": "Snover", "category": "dex", "fast": [], "charged": [], "note": "코리갑 → 눈설왕" },
+    { "name": "코리갑", "nameEn": "Snover", "category": "dex", "fast": [], "charged": [], "note": "코리갑 → 눈설왕" },
 
     // --- 리오르 (베이비, 루카리오는 competitive) ---
     { "name": "리오르", "nameEn": "Riolu", "category": "dex", "fast": [], "charged": [], "note": "리오르 → 루카리오 (베이비, 희귀)" },
@@ -623,7 +623,7 @@ const POKEMON_DATA = {
 
     // --- 유크시/엠리트/아그놈 ---
     { "name": "유크시", "nameEn": "Uxie", "category": "dex", "fast": [], "charged": [], "note": "전설, 지역한정 (아시아 태평양)" },
-    { "name": "엠라이트", "nameEn": "Mesprit", "category": "dex", "fast": [], "charged": [], "note": "전설, 지역한정 (유럽/중동/아프리카)" },
+    { "name": "엠리트", "nameEn": "Mesprit", "category": "dex", "fast": [], "charged": [], "note": "전설, 지역한정 (유럽/중동/아프리카)" },
     { "name": "아그놈", "nameEn": "Azelf", "category": "dex", "fast": [], "charged": [], "note": "전설, 지역한정 (아메리카)" },
 
     // --- 레지기가스 ---
@@ -634,7 +634,7 @@ const POKEMON_DATA = {
     { "name": "마나피", "nameEn": "Manaphy", "category": "dex", "fast": [], "charged": [], "note": "환상, 특별연구" },
 
     // --- 셰이미 ---
-    { "name": "쉐이미", "nameEn": "Shaymin", "category": "dex", "fast": [], "charged": [], "note": "환상, 랜드/스카이폼" },
+    { "name": "셰이미", "nameEn": "Shaymin", "category": "dex", "fast": [], "charged": [], "note": "환상, 랜드/스카이폼" },
 
     // --- 아르세우스 ---
     { "name": "아르세우스", "nameEn": "Arceus", "category": "dex", "fast": [], "charged": [], "note": "환상, 미구현/극희귀" },
@@ -645,7 +645,7 @@ const POKEMON_DATA = {
 
     // --- 주리비얀 라인 ---
     { "name": "주리비얀", "nameEn": "Snivy", "category": "dex", "fast": [], "charged": [], "note": "주리비얀 → 서비퍼 → 샤로다" },
-    { "name": "샤비", "nameEn": "Servine", "category": "dex", "fast": [], "charged": [], "note": "주리비얀 → 서비퍼 → 샤로다" },
+    { "name": "서비퍼", "nameEn": "Servine", "category": "dex", "fast": [], "charged": [], "note": "주리비얀 → 서비퍼 → 샤로다" },
     // 샤로다(Serperior)는 울트라리그에 등록됨
 
     // --- 뚜꾸리 라인 ---
@@ -665,10 +665,10 @@ const POKEMON_DATA = {
     // --- 요테리 라인 ---
     { "name": "요테리", "nameEn": "Lillipup", "category": "trash", "fast": [], "charged": [], "note": "흔함" },
     { "name": "하데리어", "nameEn": "Herdier", "category": "trash", "fast": [], "charged": [], "note": "" },
-    { "name": "바랜드", "nameEn": "Stoutland", "category": "trash", "fast": [], "charged": [], "note": "" },
+    { "name": "바랑가", "nameEn": "Stoutland", "category": "trash", "fast": [], "charged": [], "note": "" },
 
     // --- 쌩뿔 라인 ---
-    { "name": "쌔비냥", "nameEn": "Purrloin", "category": "trash", "fast": [], "charged": [], "note": "흔함" },
+    { "name": "쌩뿔", "nameEn": "Purrloin", "category": "trash", "fast": [], "charged": [], "note": "흔함" },
     { "name": "레파르다스", "nameEn": "Liepard", "category": "trash", "fast": [], "charged": [], "note": "" },
 
     // --- 원숭이 3종 라인 ---
@@ -685,71 +685,71 @@ const POKEMON_DATA = {
 
     // --- 마메파토 라인 ---
     { "name": "콩둘기", "nameEn": "Pidove", "category": "trash", "fast": [], "charged": [], "note": "매우 흔함" },
-    { "name": "유토브", "nameEn": "Tranquill", "category": "trash", "fast": [], "charged": [], "note": "" },
+    { "name": "콩둘기", "nameEn": "Tranquill", "category": "trash", "fast": [], "charged": [], "note": "" },
     { "name": "켄호로우", "nameEn": "Unfezant", "category": "trash", "fast": [], "charged": [], "note": "" },
 
     // --- 얼루기 라인 ---
-    { "name": "줄뮤마", "nameEn": "Blitzle", "category": "dex", "fast": [], "charged": [], "note": "얼루기 → 제브라이카" },
+    { "name": "얼루기", "nameEn": "Blitzle", "category": "dex", "fast": [], "charged": [], "note": "얼루기 → 제브라이카" },
     { "name": "제브라이카", "nameEn": "Zebstrika", "category": "dex", "fast": [], "charged": [], "note": "얼루기 → 제브라이카, 전기" },
 
     // --- 단굴 (몰드류/두더류는 competitive) ---
-    { "name": "두더류", "nameEn": "Drilbur", "category": "dex", "fast": [], "charged": [], "note": "단굴 → 몰드류" },
+    { "name": "단굴", "nameEn": "Drilbur", "category": "dex", "fast": [], "charged": [], "note": "단굴 → 몰드류" },
 
     // --- 다부니 ---
     { "name": "다부니", "nameEn": "Audino", "category": "dex", "fast": [], "charged": [], "note": "진화 없음, 메가 진화 가능, 희귀" },
 
     // --- 짐보리 라인 (노보청은 competitive) ---
-    { "name": "으랏차", "nameEn": "Timburr", "category": "dex", "fast": [], "charged": [], "note": "짐보리 → 토쇠골 → 노보청" },
+    { "name": "짐보리", "nameEn": "Timburr", "category": "dex", "fast": [], "charged": [], "note": "짐보리 → 토쇠골 → 노보청" },
     { "name": "토쇠골", "nameEn": "Gurdurr", "category": "dex", "fast": [], "charged": [], "note": "짐보리 → 토쇠골 → 노보청" },
 
     // --- 두까비 라인 ---
     { "name": "동챙이", "nameEn": "Tympole", "category": "dex", "fast": [], "charged": [], "note": "두까비 → 두빅굴 → 두빅군" },
-    { "name": "두까비", "nameEn": "Palpitoad", "category": "dex", "fast": [], "charged": [], "note": "두까비 → 두빅굴 → 두빅군" },
-    { "name": "두빅굴", "nameEn": "Seismitoad", "category": "dex", "fast": [], "charged": [], "note": "물/땅" },
+    { "name": "두빅굴", "nameEn": "Palpitoad", "category": "dex", "fast": [], "charged": [], "note": "두까비 → 두빅굴 → 두빅군" },
+    { "name": "두빅군", "nameEn": "Seismitoad", "category": "dex", "fast": [], "charged": [], "note": "물/땅" },
 
     // --- 나게키/던지미 ---
-    { "name": "던지미", "nameEn": "Throh", "category": "dex", "fast": [], "charged": [], "note": "지역한정, 진화 없음, 격투" },
-    { "name": "타격귀", "nameEn": "Sawk", "category": "dex", "fast": [], "charged": [], "note": "지역한정, 진화 없음, 격투" },
+    { "name": "나게키", "nameEn": "Throh", "category": "dex", "fast": [], "charged": [], "note": "지역한정, 진화 없음, 격투" },
+    { "name": "던지미", "nameEn": "Sawk", "category": "dex", "fast": [], "charged": [], "note": "지역한정, 진화 없음, 격투" },
 
     // --- 탈모충 라인 ---
-    { "name": "두르보", "nameEn": "Sewaddle", "category": "trash", "fast": [], "charged": [], "note": "" },
-    { "name": "두르쿤", "nameEn": "Swadloon", "category": "trash", "fast": [], "charged": [], "note": "" },
+    { "name": "탈모충", "nameEn": "Sewaddle", "category": "trash", "fast": [], "charged": [], "note": "" },
+    { "name": "두르보", "nameEn": "Swadloon", "category": "trash", "fast": [], "charged": [], "note": "" },
     { "name": "모아머", "nameEn": "Leavanny", "category": "trash", "fast": [], "charged": [], "note": "" },
 
     // --- 돌살이 라인 ---
-    { "name": "마디네", "nameEn": "Venipede", "category": "trash", "fast": [], "charged": [], "note": "" },
-    { "name": "휠구", "nameEn": "Whirlipede", "category": "trash", "fast": [], "charged": [], "note": "" },
+    { "name": "돌살이", "nameEn": "Venipede", "category": "trash", "fast": [], "charged": [], "note": "" },
+    { "name": "쏘롤", "nameEn": "Whirlipede", "category": "trash", "fast": [], "charged": [], "note": "" },
     { "name": "펜드라", "nameEn": "Scolipede", "category": "trash", "fast": [], "charged": [], "note": "" },
 
     // --- 치릴리 라인 ---
-    { "name": "소미안", "nameEn": "Cottonee", "category": "dex", "fast": [], "charged": [], "note": "치릴리 → 엘풍 (태양의돌)" },
+    { "name": "치릴리", "nameEn": "Cottonee", "category": "dex", "fast": [], "charged": [], "note": "치릴리 → 엘풍 (태양의돌)" },
     { "name": "엘풍", "nameEn": "Whimsicott", "category": "dex", "fast": [], "charged": [], "note": "풀/페어리" },
 
     // --- 쁘사이저 라인 ---
-    { "name": "치릴리", "nameEn": "Petilil", "category": "dex", "fast": [], "charged": [], "note": "쁘사이저 → 드레디아 (태양의돌)" },
+    { "name": "쁘사이저", "nameEn": "Petilil", "category": "dex", "fast": [], "charged": [], "note": "쁘사이저 → 드레디아 (태양의돌)" },
     { "name": "드레디어", "nameEn": "Lilligant", "category": "dex", "fast": [], "charged": [], "note": "쁘사이저 → 드레디아, 풀" },
 
     // --- 바스라오 ---
-    { "name": "배쓰나이", "nameEn": "Basculin", "category": "trash", "fast": [], "charged": [], "note": "적색/청색 줄무늬" },
+    { "name": "바스라오", "nameEn": "Basculin", "category": "trash", "fast": [], "charged": [], "note": "적색/청색 줄무늬" },
 
     // --- 깜까미 라인 ---
-    { "name": "깜눈크", "nameEn": "Sandile", "category": "dex", "fast": [], "charged": [], "note": "깜까미 → 악비르 → 악비아르" },
+    { "name": "깜까미", "nameEn": "Sandile", "category": "dex", "fast": [], "charged": [], "note": "깜까미 → 악비르 → 악비아르" },
     { "name": "악비르", "nameEn": "Krokorok", "category": "dex", "fast": [], "charged": [], "note": "깜까미 → 악비르 → 악비아르" },
     { "name": "악비아르", "nameEn": "Krookodile", "category": "dex", "fast": [], "charged": [], "note": "땅/악" },
 
     // --- 달막화 라인 ---
     { "name": "달막화", "nameEn": "Darumaka", "category": "dex", "fast": [], "charged": [], "note": "달막화 → 달막화석상" },
-    { "name": "불비달마", "nameEn": "Darmanitan", "category": "dex", "fast": [], "charged": [], "note": "달막화 → 달막화석상, 불꽃" },
+    { "name": "달막화석상", "nameEn": "Darmanitan", "category": "dex", "fast": [], "charged": [], "note": "달막화 → 달막화석상, 불꽃" },
 
     // --- 마라카치 ---
     { "name": "마라카치", "nameEn": "Maractus", "category": "dex", "fast": [], "charged": [], "note": "지역한정, 진화 없음, 풀" },
 
     // --- 돌체비 라인 ---
-    { "name": "돌살이", "nameEn": "Dwebble", "category": "trash", "fast": [], "charged": [], "note": "흔함" },
+    { "name": "돌체비", "nameEn": "Dwebble", "category": "trash", "fast": [], "charged": [], "note": "흔함" },
     { "name": "암팰리스", "nameEn": "Crustle", "category": "trash", "fast": [], "charged": [], "note": "" },
 
     // --- 곤율란 라인 (곤율거니/스크래피는 competitive) ---
-    { "name": "곤율랭", "nameEn": "Scraggy", "category": "dex", "fast": [], "charged": [], "note": "곤율란 → 곤율거니" },
+    { "name": "곤율란", "nameEn": "Scraggy", "category": "dex", "fast": [], "charged": [], "note": "곤율란 → 곤율거니" },
 
     // --- 심보러 ---
     { "name": "심보러", "nameEn": "Sigilyph", "category": "dex", "fast": [], "charged": [], "note": "지역한정 (이집트/그리스), 진화 없음, 에스퍼/비행" },
@@ -766,7 +766,7 @@ const POKEMON_DATA = {
     { "name": "아케오스", "nameEn": "Archeops", "category": "dex", "fast": [], "charged": [], "note": "바위/비행" },
 
     // --- 쓰레기몽 라인 ---
-    { "name": "깨봉이", "nameEn": "Trubbish", "category": "trash", "fast": [], "charged": [], "note": "흔함" },
+    { "name": "쓰레기몽", "nameEn": "Trubbish", "category": "trash", "fast": [], "charged": [], "note": "흔함" },
     { "name": "더스트나", "nameEn": "Garbodor", "category": "trash", "fast": [], "charged": [], "note": "" },
 
     // --- 조로아 라인 ---
@@ -788,7 +788,7 @@ const POKEMON_DATA = {
     { "name": "란쿨루스", "nameEn": "Reuniclus", "category": "dex", "fast": [], "charged": [], "note": "에스퍼" },
 
     // --- 독오리 라인 ---
-    { "name": "꼬지보리", "nameEn": "Ducklett", "category": "dex", "fast": [], "charged": [], "note": "독오리 → 스와나" },
+    { "name": "독오리", "nameEn": "Ducklett", "category": "dex", "fast": [], "charged": [], "note": "독오리 → 스와나" },
 
     // --- 바닐프티 라인 ---
     { "name": "바닐프티", "nameEn": "Vanillite", "category": "trash", "fast": [], "charged": [], "note": "" },
@@ -797,7 +797,7 @@ const POKEMON_DATA = {
 
     // --- 사철록 라인 ---
     { "name": "사철록", "nameEn": "Deerling", "category": "dex", "fast": [], "charged": [], "note": "4가지 계절폼, 사철록 → 메부키" },
-    { "name": "바라철록", "nameEn": "Sawsbuck", "category": "dex", "fast": [], "charged": [], "note": "4가지 계절폼, 노말/풀" },
+    { "name": "메부키", "nameEn": "Sawsbuck", "category": "dex", "fast": [], "charged": [], "note": "4가지 계절폼, 노말/풀" },
 
     // --- 에몽가 ---
     { "name": "에몽가", "nameEn": "Emolga", "category": "dex", "fast": [], "charged": [], "note": "진화 없음, 전기/비행" },
@@ -806,17 +806,17 @@ const POKEMON_DATA = {
     { "name": "딱정곤", "nameEn": "Karrablast", "category": "dex", "fast": [], "charged": [], "note": "딱정곤 → 슈발리에 (교환 진화)" },
 
     // --- 쪼마리 라인 ---
-    { "name": "깜놀버슬", "nameEn": "Foongus", "category": "trash", "fast": [], "charged": [], "note": "흔함" },
+    { "name": "쪼마리", "nameEn": "Foongus", "category": "trash", "fast": [], "charged": [], "note": "흔함" },
     { "name": "뽀록나", "nameEn": "Amoonguss", "category": "trash", "fast": [], "charged": [], "note": "" },
 
     // --- 탱자충 (해골몽은 competitive) ---
-    { "name": "탱그릴", "nameEn": "Frillish", "category": "dex", "fast": [], "charged": [], "note": "탱자충 → 해골몽 (암수 다름)" },
+    { "name": "탱자충", "nameEn": "Frillish", "category": "dex", "fast": [], "charged": [], "note": "탱자충 → 해골몽 (암수 다름)" },
 
     // --- 알로마담 ---
-    { "name": "맘복치", "nameEn": "Alomomola", "category": "dex", "fast": [], "charged": [], "note": "진화 없음, 희귀, 물" },
+    { "name": "알로마담", "nameEn": "Alomomola", "category": "dex", "fast": [], "charged": [], "note": "진화 없음, 희귀, 물" },
 
     // --- 전기거미 라인 ---
-    { "name": "파쪼옥", "nameEn": "Joltik", "category": "dex", "fast": [], "charged": [], "note": "전기거미 → 전툴라" },
+    { "name": "전기거미", "nameEn": "Joltik", "category": "dex", "fast": [], "charged": [], "note": "전기거미 → 전툴라" },
     { "name": "전툴라", "nameEn": "Galvantula", "category": "dex", "fast": [], "charged": [], "note": "벌레/전기" },
 
     // --- 철시드 (너트령은 competitive) ---
@@ -837,48 +837,48 @@ const POKEMON_DATA = {
     { "name": "벰크", "nameEn": "Beheeyem", "category": "dex", "fast": [], "charged": [], "note": "에스퍼" },
 
     // --- 불비달마 라인 (샹델라는 competitive) ---
-    { "name": "불켜미", "nameEn": "Litwick", "category": "dex", "fast": [], "charged": [], "note": "불비달마 → 램프라 → 샹델라" },
+    { "name": "불비달마", "nameEn": "Litwick", "category": "dex", "fast": [], "charged": [], "note": "불비달마 → 램프라 → 샹델라" },
     { "name": "램프라", "nameEn": "Lampent", "category": "dex", "fast": [], "charged": [], "note": "불비달마 → 램프라 → 샹델라" },
 
     // --- 터비 라인 (도끼라크는 competitive) ---
-    { "name": "터검니", "nameEn": "Axew", "category": "dex", "fast": [], "charged": [], "note": "터비 → 액슨도 → 도끼라크 (희귀)" },
+    { "name": "터비", "nameEn": "Axew", "category": "dex", "fast": [], "charged": [], "note": "터비 → 액슨도 → 도끼라크 (희귀)" },
     { "name": "액슨도", "nameEn": "Fraxure", "category": "dex", "fast": [], "charged": [], "note": "터비 → 액슨도 → 도끼라크" },
 
     // --- 곰돌 라인 ---
-    { "name": "코고미", "nameEn": "Cubchoo", "category": "trash", "fast": [], "charged": [], "note": "흔함" },
+    { "name": "곰돌", "nameEn": "Cubchoo", "category": "trash", "fast": [], "charged": [], "note": "흔함" },
     { "name": "툰베어", "nameEn": "Beartic", "category": "trash", "fast": [], "charged": [], "note": "" },
 
     // --- 프리지오 ---
     { "name": "프리지오", "nameEn": "Cryogonal", "category": "dex", "fast": [], "charged": [], "note": "진화 없음, 희귀, 얼음" },
 
     // --- 쉘더 라인 ---
-    { "name": "쪼마리", "nameEn": "Shelmet", "category": "dex", "fast": [], "charged": [], "note": "쉘더 → 어지리더 (교환 진화)" },
+    { "name": "쉘더", "nameEn": "Shelmet", "category": "dex", "fast": [], "charged": [], "note": "쉘더 → 어지리더 (교환 진화)" },
     { "name": "어지리더", "nameEn": "Accelgor", "category": "dex", "fast": [], "charged": [], "note": "벌레" },
 
     // --- 마스볼 ---
-    { "name": "메더", "nameEn": "Stunfisk", "category": "dex", "fast": [], "charged": [], "note": "진화 없음, 가라르폼은 PvP 탑" },
+    { "name": "마스볼", "nameEn": "Stunfisk", "category": "dex", "fast": [], "charged": [], "note": "진화 없음, 가라르폼은 PvP 탑" },
 
     // --- 미트민 라인 ---
-    { "name": "비조푸", "nameEn": "Mienfoo", "category": "dex", "fast": [], "charged": [], "note": "미트민 → 미트파오" },
-    { "name": "비조도", "nameEn": "Mienshao", "category": "dex", "fast": [], "charged": [], "note": "격투" },
+    { "name": "미트민", "nameEn": "Mienfoo", "category": "dex", "fast": [], "charged": [], "note": "미트민 → 미트파오" },
+    { "name": "미트파오", "nameEn": "Mienshao", "category": "dex", "fast": [], "charged": [], "note": "격투" },
 
     // --- 체스피 라인 ---
-    { "name": "자망칼", "nameEn": "Pawniard", "category": "dex", "fast": [], "charged": [], "note": "체스피 → 절각참" },
+    { "name": "체스피", "nameEn": "Pawniard", "category": "dex", "fast": [], "charged": [], "note": "체스피 → 절각참" },
     { "name": "절각참", "nameEn": "Bisharp", "category": "dex", "fast": [], "charged": [], "note": "악/강철" },
 
     // --- 버프론 ---
     { "name": "버프론", "nameEn": "Bouffalant", "category": "dex", "fast": [], "charged": [], "note": "지역한정 (뉴욕), 진화 없음, 노말" },
 
     // --- 바르비트 라인 ---
-    { "name": "수리둥보", "nameEn": "Rufflet", "category": "dex", "fast": [], "charged": [], "note": "바르비트 → 워글" },
+    { "name": "바르비트", "nameEn": "Rufflet", "category": "dex", "fast": [], "charged": [], "note": "바르비트 → 워글" },
     { "name": "워글", "nameEn": "Braviary", "category": "dex", "fast": [], "charged": [], "note": "노말/비행" },
 
     // --- 바르차이 (버랜지나는 competitive) ---
-    { "name": "벌차이", "nameEn": "Vullaby", "category": "dex", "fast": [], "charged": [], "note": "바르차이 → 버랜지나" },
+    { "name": "바르차이", "nameEn": "Vullaby", "category": "dex", "fast": [], "charged": [], "note": "바르차이 → 버랜지나" },
 
     // --- 흙도론/앤티골 ---
-    { "name": "앤티골", "nameEn": "Heatmor", "category": "dex", "fast": [], "charged": [], "note": "지역한정, 진화 없음, 불꽃" },
-    { "name": "아이앤트", "nameEn": "Durant", "category": "dex", "fast": [], "charged": [], "note": "지역한정, 진화 없음, 벌레/강철" },
+    { "name": "흙도론", "nameEn": "Heatmor", "category": "dex", "fast": [], "charged": [], "note": "지역한정, 진화 없음, 불꽃" },
+    { "name": "앤티골", "nameEn": "Durant", "category": "dex", "fast": [], "charged": [], "note": "지역한정, 진화 없음, 벌레/강철" },
 
     // --- 모노두 라인 ---
     { "name": "모노두", "nameEn": "Deino", "category": "dex", "fast": [], "charged": [], "note": "모노두 → 디헤드 → 삼삼드래 (희귀)" },
@@ -923,16 +923,16 @@ const POKEMON_DATA = {
 
     // --- 분이벌레 라인 ---
     { "name": "분이벌레", "nameEn": "Scatterbug", "category": "trash", "fast": [], "charged": [], "note": "분이벌레 → 분몬스 → 비비용" },
-    { "name": "분떠도리", "nameEn": "Spewpa", "category": "trash", "fast": [], "charged": [], "note": "" },
+    { "name": "분몬스", "nameEn": "Spewpa", "category": "trash", "fast": [], "charged": [], "note": "" },
     { "name": "비비용", "nameEn": "Vivillon", "category": "dex", "fast": [], "charged": [], "note": "18가지 패턴, 지역별 수집" },
 
     // --- 꼬리선 라인 ---
-    { "name": "레오꼬", "nameEn": "Litleo", "category": "trash", "fast": [], "charged": [], "note": "흔함" },
+    { "name": "꼬리선", "nameEn": "Litleo", "category": "trash", "fast": [], "charged": [], "note": "흔함" },
     { "name": "화염레오", "nameEn": "Pyroar", "category": "trash", "fast": [], "charged": [], "note": "" },
 
     // --- 플라베베 라인 ---
     { "name": "플라베베", "nameEn": "Flabébé", "category": "dex", "fast": [], "charged": [], "note": "5가지 꽃색, 플라베베 → 플라엣 → 플라제스" },
-    { "name": "플라엣테", "nameEn": "Floette", "category": "dex", "fast": [], "charged": [], "note": "플라베베 → 플라엣 → 플라제스" },
+    { "name": "플라엣", "nameEn": "Floette", "category": "dex", "fast": [], "charged": [], "note": "플라베베 → 플라엣 → 플라제스" },
     { "name": "플라제스", "nameEn": "Florges", "category": "dex", "fast": [], "charged": [], "note": "페어리" },
 
     // --- 메이클 라인 ---
@@ -959,7 +959,7 @@ const POKEMON_DATA = {
     { "name": "프레프티르", "nameEn": "Aromatisse", "category": "dex", "fast": [], "charged": [], "note": "페어리" },
 
     // --- 나룸 라인 ---
-    { "name": "나룸퍼프", "nameEn": "Swirlix", "category": "dex", "fast": [], "charged": [], "note": "나룸 → 나루림" },
+    { "name": "나룸", "nameEn": "Swirlix", "category": "dex", "fast": [], "charged": [], "note": "나룸 → 나루림" },
     { "name": "나루림", "nameEn": "Slurpuff", "category": "dex", "fast": [], "charged": [], "note": "페어리" },
 
     // --- 오케이징 라인 ---
@@ -967,23 +967,23 @@ const POKEMON_DATA = {
     { "name": "칼라마네로", "nameEn": "Malamar", "category": "dex", "fast": [], "charged": [], "note": "악/에스퍼" },
 
     // --- 개미신 라인 ---
-    { "name": "거북손손", "nameEn": "Binacle", "category": "dex", "fast": [], "charged": [], "note": "개미신 → 거북손데스" },
+    { "name": "개미신", "nameEn": "Binacle", "category": "dex", "fast": [], "charged": [], "note": "개미신 → 거북손데스" },
     { "name": "거북손데스", "nameEn": "Barbaracle", "category": "dex", "fast": [], "charged": [], "note": "바위/물" },
 
     // --- 드라미도로 라인 ---
-    { "name": "수레기", "nameEn": "Skrelp", "category": "dex", "fast": [], "charged": [], "note": "드라미도로 → 드래캄" },
+    { "name": "드라미도로", "nameEn": "Skrelp", "category": "dex", "fast": [], "charged": [], "note": "드라미도로 → 드래캄" },
     { "name": "드래캄", "nameEn": "Dragalge", "category": "dex", "fast": [], "charged": [], "note": "독/드래곤" },
 
     // --- 수레기 라인 ---
-    { "name": "완철포", "nameEn": "Clauncher", "category": "dex", "fast": [], "charged": [], "note": "수레기 → 블로스터" },
+    { "name": "수레기", "nameEn": "Clauncher", "category": "dex", "fast": [], "charged": [], "note": "수레기 → 블로스터" },
     { "name": "블로스터", "nameEn": "Clawitzer", "category": "dex", "fast": [], "charged": [], "note": "물" },
 
     // --- 목도리키드 라인 ---
-    { "name": "목도리키텔", "nameEn": "Helioptile", "category": "dex", "fast": [], "charged": [], "note": "목도리키드 → 일레도리자드" },
+    { "name": "목도리키드", "nameEn": "Helioptile", "category": "dex", "fast": [], "charged": [], "note": "목도리키드 → 일레도리자드" },
     { "name": "일레도리자드", "nameEn": "Heliolisk", "category": "dex", "fast": [], "charged": [], "note": "전기/노말" },
 
     // --- 치고라스 라인 ---
-    { "name": "티고라스", "nameEn": "Tyrunt", "category": "dex", "fast": [], "charged": [], "note": "치고라스 → 견고라스 (희귀 화석)" },
+    { "name": "치고라스", "nameEn": "Tyrunt", "category": "dex", "fast": [], "charged": [], "note": "치고라스 → 견고라스 (희귀 화석)" },
     { "name": "견고라스", "nameEn": "Tyrantrum", "category": "dex", "fast": [], "charged": [], "note": "바위/드래곤" },
 
     // --- 아마루스 라인 ---
@@ -993,23 +993,23 @@ const POKEMON_DATA = {
     // --- 님피아 (이미 competitive) ---
 
     // --- 데디캥 ---
-    { "name": "데덴네", "nameEn": "Dedenne", "category": "dex", "fast": [], "charged": [], "note": "진화 없음, 전기/페어리" },
+    { "name": "데디캥", "nameEn": "Dedenne", "category": "dex", "fast": [], "charged": [], "note": "진화 없음, 전기/페어리" },
 
     // --- 멜시 (이미 competitive) ---
 
     // --- 미끄네일 라인 (미끄래곤은 competitive) ---
-    { "name": "미끄메라", "nameEn": "Goomy", "category": "dex", "fast": [], "charged": [], "note": "미끄네일 → 미끄네뇽 → 미끄래곤 (희귀)" },
+    { "name": "미끄네일", "nameEn": "Goomy", "category": "dex", "fast": [], "charged": [], "note": "미끄네일 → 미끄네뇽 → 미끄래곤 (희귀)" },
     { "name": "미끄네일", "nameEn": "Sliggoo", "category": "dex", "fast": [], "charged": [], "note": "미끄네일 → 미끄네뇽 → 미끄래곤" },
 
     // --- 클레피 ---
     { "name": "클레피", "nameEn": "Klefki", "category": "dex", "fast": [], "charged": [], "note": "지역한정 (프랑스), 진화 없음, 강철/페어리" },
 
     // --- 나무돌이 (오롯트/뚜벅초는 competitive) ---
-    { "name": "나목령", "nameEn": "Phantump", "category": "dex", "fast": [], "charged": [], "note": "나무돌이 → 오롯트 (교환 진화)" },
+    { "name": "나무돌이", "nameEn": "Phantump", "category": "dex", "fast": [], "charged": [], "note": "나무돌이 → 오롯트 (교환 진화)" },
 
     // --- 호바귀 라인 ---
     { "name": "호바귀", "nameEn": "Pumpkaboo", "category": "dex", "fast": [], "charged": [], "note": "호바귀 → 대호바귀 (4가지 사이즈)" },
-    { "name": "펌킨인", "nameEn": "Gourgeist", "category": "dex", "fast": [], "charged": [], "note": "고스트/풀" },
+    { "name": "대호바귀", "nameEn": "Gourgeist", "category": "dex", "fast": [], "charged": [], "note": "고스트/풀" },
 
     // --- 꽁어름 (크레베이스는 competitive) ---
     { "name": "꽁어름", "nameEn": "Bergmite", "category": "dex", "fast": [], "charged": [], "note": "꽁어름 → 크레베이스" },
@@ -1054,11 +1054,11 @@ const POKEMON_DATA = {
     { "name": "모단단게", "nameEn": "Crabominable", "category": "dex", "fast": [], "charged": [], "note": "격투/얼음" },
 
     // --- 알로라 폼 ---
-    { "name": "꼬리치(알로라)", "nameEn": "Rattata (Alolan)", "category": "trash", "fast": [], "charged": [], "note": "악/노말" },
+    { "name": "꼬렛(알로라)", "nameEn": "Rattata (Alolan)", "category": "trash", "fast": [], "charged": [], "note": "악/노말" },
     { "name": "레트라(알로라)", "nameEn": "Raticate (Alolan)", "category": "trash", "fast": [], "charged": [], "note": "악/노말" },
     { "name": "디그다(알로라)", "nameEn": "Diglett (Alolan)", "category": "trash", "fast": [], "charged": [], "note": "땅/강철" },
     { "name": "닥트리오(알로라)", "nameEn": "Dugtrio (Alolan)", "category": "trash", "fast": [], "charged": [], "note": "땅/강철" },
-    { "name": "야옹(알로라)", "nameEn": "Meowth (Alolan)", "category": "trash", "fast": [], "charged": [], "note": "악 → 페르시온(알로라)" },
+    { "name": "나옹(알로라)", "nameEn": "Meowth (Alolan)", "category": "trash", "fast": [], "charged": [], "note": "악 → 페르시온(알로라)" },
     { "name": "페르시온(알로라)", "nameEn": "Persian (Alolan)", "category": "trash", "fast": [], "charged": [], "note": "악" },
     { "name": "질퍽이(알로라)", "nameEn": "Grimer (Alolan)", "category": "dex", "fast": [], "charged": [], "note": "질퍽이(알로라) → 질뻐기(알로라) (독/악)" },
     { "name": "질뻐기(알로라)", "nameEn": "Muk (Alolan)", "category": "dex", "fast": [], "charged": [], "note": "독/악, PvP 활용 가능" },
@@ -1067,7 +1067,7 @@ const POKEMON_DATA = {
     { "name": "딱구리(알로라)", "nameEn": "Golem (Alolan)", "category": "trash", "fast": [], "charged": [], "note": "바위/전기" },
     { "name": "나시(알로라)", "nameEn": "Exeggutor (Alolan)", "category": "dex", "fast": [], "charged": [], "note": "풀/드래곤, 독특한 타입 조합" },
     { "name": "텅구리(알로라)", "nameEn": "Marowak (Alolan)", "category": "dex", "fast": [], "charged": [], "note": "불꽃/고스트, 레이드 전용 획득" },
-    { "name": "꼬부기(알로라)", "nameEn": "Vulpix (Alolan)", "category": "dex", "fast": [], "charged": [], "note": "꼬부기(알로라) → 나인테일(알로라) (얼음)" },
+    { "name": "식스테일(알로라)", "nameEn": "Vulpix (Alolan)", "category": "dex", "fast": [], "charged": [], "note": "꼬부기(알로라) → 나인테일(알로라) (얼음)" },
     { "name": "나인테일(알로라)", "nameEn": "Ninetales (Alolan)", "category": "dex", "fast": [], "charged": [], "note": "얼음/페어리" },
     { "name": "모래두지(알로라)", "nameEn": "Sandshrew (Alolan)", "category": "dex", "fast": [], "charged": [], "note": "모래두지(알로라) → 고지(알로라) (얼음/강철)" },
     { "name": "고지(알로라)", "nameEn": "Sandslash (Alolan)", "category": "dex", "fast": [], "charged": [], "note": "얼음/강철" },
@@ -1208,16 +1208,16 @@ const POKEMON_DATA = {
 
     // --- 가라르 폼 ---
     { "name": "지그제구리(가라르)", "nameEn": "Zigzagoon (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "지그제구리(가라르) → 라이너트(가라르) → 밤무아드" },
-    { "name": "라이너트(가라르)", "nameEn": "Linoone (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "" },
-    { "name": "메더(가라르)", "nameEn": "Stunfisk (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "땅/강철, PvP 활용" },
+    { "name": "직구리(가라르)", "nameEn": "Linoone (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "" },
+    { "name": "모양깍지(가라르)", "nameEn": "Stunfisk (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "땅/강철, PvP 활용" },
     { "name": "포니타(가라르)", "nameEn": "Ponyta (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "포니타(가라르) → 날쌩마(가라르) (에스퍼)" },
     { "name": "데스마스(가라르)", "nameEn": "Yamask (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "데스마스(가라르) → 데스니칸 (땅/고스트)" },
     { "name": "코산호(가라르)", "nameEn": "Corsola (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "코산호(가라르) → 산호령 (고스트)" },
     { "name": "산호르곤", "nameEn": "Cursola", "category": "dex", "fast": [], "charged": [], "note": "고스트" },
     { "name": "마임맨(가라르)", "nameEn": "Mr. Mime (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "마임맨(가라르) → 마임꽁 (얼음/에스퍼)" },
-    { "name": "달막화(가라르)", "nameEn": "Darumaka (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "불비달마(가라르) → 불비달만(가라르) (얼음)" },
-    { "name": "불비달마(가라르)", "nameEn": "Darmanitan (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "얼음" },
-    { "name": "모부기(가라르)", "nameEn": "Weezing (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "독/페어리" },
+    { "name": "불비달마(가라르)", "nameEn": "Darumaka (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "불비달마(가라르) → 불비달만(가라르) (얼음)" },
+    { "name": "불비달만(가라르)", "nameEn": "Darmanitan (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "얼음" },
+    { "name": "또도가스(가라르)", "nameEn": "Weezing (Galarian)", "category": "dex", "fast": [], "charged": [], "note": "독/페어리" },
 
     // --- 8세대 전설/환상 ---
     { "name": "자마젠타", "nameEn": "Zamazenta", "category": "dex", "fast": [], "charged": [], "note": "격투, 전설 (방패왕 폼은 격투/강철)" },
@@ -1269,7 +1269,7 @@ const POKEMON_DATA = {
     { "name": "마피티프", "nameEn": "Mabosstiff", "category": "trash", "fast": [], "charged": [], "note": "악" },
     { "name": "땃쭈르", "nameEn": "Shroodle", "category": "trash", "fast": [], "charged": [], "note": "노쇠부기 → 그래피티나" },
     { "name": "태깅구르", "nameEn": "Grafaiai", "category": "trash", "fast": [], "charged": [], "note": "독/노말" },
-    { "name": "우퍼(팔데아)", "nameEn": "Wooper (Paldean)", "category": "dex", "fast": [], "charged": [], "note": "우퍼(팔데아) → 토오 (독/땅)" },
+    { "name": "우파(팔데아)", "nameEn": "Wooper (Paldean)", "category": "dex", "fast": [], "charged": [], "note": "우퍼(팔데아) → 토오 (독/땅)" },
     { "name": "그푸리", "nameEn": "Bramblin", "category": "dex", "fast": [], "charged": [], "note": "스카레틴 → 브람블린" },
     { "name": "공푸리", "nameEn": "Brambleghast", "category": "dex", "fast": [], "charged": [], "note": "풀/고스트" },
     { "name": "들눈해", "nameEn": "Toedscool", "category": "dex", "fast": [], "charged": [], "note": "토도그로스 → 투도그로스" },
@@ -1321,10 +1321,10 @@ const POKEMON_DATA = {
     { "name": "강챙이", "nameEn": "Poliwrath", "category": "dex", "fast": [], "charged": [], "note": "발챙이 → 슈륙챙이 → 강챙이 (물/격투)" },
     { "name": "후딘", "nameEn": "Alakazam", "category": "dex", "fast": [], "charged": [], "note": "케이시 → 윤겔라 → 후딘, 에스퍼 어태커, 메가 진화 가능" },
     { "name": "우츠보트", "nameEn": "Victreebel", "category": "dex", "fast": [], "charged": [], "note": "모다피 → 우츠동 → 우츠보트 (풀/독)" },
-    { "name": "쁘사마", "nameEn": "Pinsir", "category": "dex", "fast": [], "charged": [], "note": "벌레, 메가 진화 가능" },
+    { "name": "쁘사이저", "nameEn": "Pinsir", "category": "dex", "fast": [], "charged": [], "note": "벌레, 메가 진화 가능" },
     { "name": "파이어", "nameEn": "Moltres", "category": "dex", "fast": [], "charged": [], "note": "전설, 불꽃/비행" },
     { "name": "크로뱃", "nameEn": "Crobat", "category": "dex", "fast": [], "charged": [], "note": "주뱃 → 골뱃 → 크로뱃 (독/비행)" },
-    { "name": "란턴", "nameEn": "Lanturn", "category": "dex", "fast": [], "charged": [], "note": "초라기 → 란턴 (물/전기 PvP)" },
+    { "name": "랜턴", "nameEn": "Lanturn", "category": "dex", "fast": [], "charged": [], "note": "초라기 → 란턴 (물/전기 PvP)" },
     { "name": "전룡", "nameEn": "Ampharos", "category": "dex", "fast": [], "charged": [], "note": "메리프 → 보우양 → 전룡, 메가 진화 가능" },
     { "name": "그랑블루", "nameEn": "Granbull", "category": "dex", "fast": [], "charged": [], "note": "블루 → 그랑블루 (페어리)" },
     { "name": "만타인", "nameEn": "Mantine", "category": "dex", "fast": [], "charged": [], "note": "타만타 → 만타인 (물/비행)" },
@@ -1353,12 +1353,12 @@ const POKEMON_DATA = {
     { "name": "단굴", "nameEn": "Roggenrola", "category": "dex", "fast": [], "charged": [], "note": "단굴 → 암트르 → 기가이어스 (바위)" },
     { "name": "암트르", "nameEn": "Boldore", "category": "dex", "fast": [], "charged": [], "note": "단굴 → 암트르 → 기가이어스" },
     { "name": "기가이어스", "nameEn": "Gigalith", "category": "dex", "fast": [], "charged": [], "note": "단굴 최종 진화 (바위)" },
-    { "name": "또르박쥐", "nameEn": "Woobat", "category": "trash", "fast": [], "charged": [], "note": "코로모리 → 맘박쥐" },
+    { "name": "코로모리", "nameEn": "Woobat", "category": "trash", "fast": [], "charged": [], "note": "코로모리 → 맘박쥐" },
     { "name": "맘박쥐", "nameEn": "Swoobat", "category": "trash", "fast": [], "charged": [], "note": "에스퍼/비행" },
     { "name": "노보청", "nameEn": "Conkeldurr", "category": "dex", "fast": [], "charged": [], "note": "짐보리 → 토쇠골 → 노보청 (격투, 교환 진화)" },
     { "name": "곤율거니", "nameEn": "Scrafty", "category": "dex", "fast": [], "charged": [], "note": "곤율란 → 곤율거니 (악/격투)" },
     { "name": "데스니칸", "nameEn": "Cofagrigus", "category": "dex", "fast": [], "charged": [], "note": "데스마스 → 데스니칸 (고스트)" },
-    { "name": "액스라이즈", "nameEn": "Haxorus", "category": "dex", "fast": [], "charged": [], "note": "터비 → 액슨도 → 도끼라크 (드래곤)" },
+    { "name": "도끼라크", "nameEn": "Haxorus", "category": "dex", "fast": [], "charged": [], "note": "터비 → 액슨도 → 도끼라크 (드래곤)" },
     { "name": "크리만", "nameEn": "Druddigon", "category": "dex", "fast": [], "charged": [], "note": "드래곤, 진화 없음" },
     { "name": "골루그", "nameEn": "Golurk", "category": "dex", "fast": [], "charged": [], "note": "골릿 → 골루그 (땅/고스트)" },
     { "name": "버랜지나", "nameEn": "Mandibuzz", "category": "dex", "fast": [], "charged": [], "note": "바르차이 → 버랜지나 (악/비행)" },
