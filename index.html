@@ -227,7 +227,10 @@
   <div class="card-list" id="list"></div>
 </div>
 
-<script src="data.js"></script>
+<script>
+// 캐시 무효화: 타임스탬프를 붙여서 data.js를 항상 최신으로 로드
+document.write('<scr' + 'ipt src="data.js?v=' + Date.now() + '"><\/scr' + 'ipt>');
+</script>
 <script>
 const CATEGORY_LABELS = {
   powerup: '강화',
