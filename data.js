@@ -579,8 +579,8 @@ const POKEMON_DATA = {
     { "name": "히포포타스", "nameEn": "Hippopotas", "category": "dex", "fast": [], "charged": [], "note": "히포포타스 → 하마돈" },
     { "name": "하마돈", "nameEn": "Hippowdon", "category": "dex", "fast": [], "charged": [], "note": "히포포타스 → 하마돈, 땅" },
 
-    // --- 코리갑 (눈설왕은 competitive) ---
-    { "name": "코리갑", "nameEn": "Snover", "category": "dex", "fast": [], "charged": [], "note": "코리갑 → 눈설왕" },
+    // --- 눈쓰개 (눈설왕은 competitive) ---
+    { "name": "눈쓰개", "nameEn": "Snover", "category": "dex", "fast": [], "charged": [], "note": "눈쓰개 → 눈설왕" },
 
     // --- 리오르 (베이비, 루카리오는 competitive) ---
     { "name": "리오르", "nameEn": "Riolu", "category": "dex", "fast": [], "charged": [], "note": "리오르 → 루카리오 (베이비, 희귀)" },
