@@ -1355,7 +1355,7 @@ const POKEMON_DATA = {
     { "name": "기가이어스", "nameEn": "Gigalith", "category": "dex", "fast": [], "charged": [], "note": "단굴 최종 진화 (바위)" },
     { "name": "코로모리", "nameEn": "Woobat", "category": "trash", "fast": [], "charged": [], "note": "코로모리 → 맘박쥐" },
     { "name": "맘박쥐", "nameEn": "Swoobat", "category": "trash", "fast": [], "charged": [], "note": "에스퍼/비행" },
-    { "name": "노보청", "nameEn": "Conkeldurr", "category": "dex", "fast": [], "charged": [], "note": "짐보리 → 토쇠골 → 노보청 (격투, 교환 진화)" },
+    { "name": "노보청", "nameEn": "Conkeldurr", "category": "powerup", "fast": ["카운터", "독찌르기"], "charged": ["폭발펀치", "스톤엣지"], "note": "격투 최강급 어태커, 교환 진화 추천" },
     { "name": "곤율거니", "nameEn": "Scrafty", "category": "dex", "fast": [], "charged": [], "note": "곤율란 → 곤율거니 (악/격투)" },
     { "name": "데스니칸", "nameEn": "Cofagrigus", "category": "dex", "fast": [], "charged": [], "note": "데스마스 → 데스니칸 (고스트)" },
     { "name": "도끼라크", "nameEn": "Haxorus", "category": "dex", "fast": [], "charged": [], "note": "터비 → 액슨도 → 도끼라크 (드래곤)" },
