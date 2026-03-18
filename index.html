@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>포켓몬GO 포켓몬 관리 가이드</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #1a1a2e;
+    color: #e0e0e0;
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 12px 0;
+    color: #fff;
+  }
+
+  .search-box {
+    position: sticky;
+    top: 0;
+    background: #1a1a2e;
+    padding: 8px 0 12px;
+    z-index: 10;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    background: #16213e;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .search-box input:focus {
+    border-color: #e94560;
+  }
+
+  .search-box input::placeholder {
+    color: #666;
+  }
+
+  .filters {
+    display: flex;
+    gap: 6px;
+    padding: 4px 0 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filters::-webkit-scrollbar { display: none; }
+
+  .filter-btn {
+    flex-shrink: 0;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+    background: #16213e;
+    color: #aaa;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  .filter-btn:hover { background: #1a3a5c; }
+
+  .filter-btn.active {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .filter-btn.active[data-cat="all"]     { background: #e94560; }
+  .filter-btn.active[data-cat="powerup"] { background: #e94560; }
+  .filter-btn.active[data-cat="ultra"]   { background: #0f3460; }
+  .filter-btn.active[data-cat="super"]   { background: #533483; }
+  .filter-btn.active[data-cat="dex"]     { background: #2b6e3f; }
+  .filter-btn.active[data-cat="trash"]   { background: #555; }
+
+  .count {
+    text-align: right;
+    font-size: 0.8rem;
+    color: #666;
+    padding-bottom: 8px;
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: #16213e;
+    border-radius: 12px;
+    transition: transform 0.1s;
+  }
+
+  .card:active { transform: scale(0.98); }
+
+  .card-info { flex: 1; min-width: 0; }
+
+  .card-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .card-name-en {
+    font-size: 0.8rem;
+    color: #666;
+  }
+
+  .card-note {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 4px;
+    line-height: 1.3;
+  }
+
+  .badge {
+    flex-shrink: 0;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  .badge-powerup { background: #e94560; }
+  .badge-ultra   { background: #0f3460; }
+  .badge-super   { background: #533483; }
+  .badge-dex     { background: #2b6e3f; }
+  .badge-trash   { background: #555; }
+
+  .empty {
+    text-align: center;
+    padding: 40px 0;
+    color: #555;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 400px) {
+    .container { padding: 8px; }
+    h1 { font-size: 1.2rem; }
+    .card { padding: 10px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>포켓몬GO 관리 가이드</h1>
+
+  <div class="search-box">
+    <input type="text" id="search" placeholder="포켓몬 이름 검색 (한글/영문)" autocomplete="off">
+  </div>
+
+  <div class="filters" id="filters">
+    <button class="filter-btn active" data-cat="all">전체</button>
+    <button class="filter-btn" data-cat="powerup">강화</button>
+    <button class="filter-btn" data-cat="ultra">울트라리그</button>
+    <button class="filter-btn" data-cat="super">슈퍼리그</button>
+    <button class="filter-btn" data-cat="dex">도감용</button>
+    <button class="filter-btn" data-cat="trash">버림</button>
+  </div>
+
+  <div class="count" id="count"></div>
+  <div class="card-list" id="list"></div>
+</div>
+
+<script>
+const CATEGORY_LABELS = {
+  powerup: '강화',
+  ultra: '울트라',
+  super: '슈퍼',
+  dex: '도감',
+  trash: '버림'
+};
+
+let allPokemon = [];
+let currentCat = 'all';
+let currentQuery = '';
+
+async function loadData() {
+  try {
+    const res = await fetch('data.json');
+    const data = await res.json();
+    allPokemon = data.pokemon;
+    render();
+  } catch (e) {
+    document.getElementById('list').innerHTML =
+      '<div class="empty">데이터를 불러올 수 없습니다.</div>';
+  }
+}
+
+function render() {
+  const list = document.getElementById('list');
+  const countEl = document.getElementById('count');
+  const q = currentQuery.toLowerCase();
+
+  const filtered = allPokemon.filter(p => {
+    const matchCat = currentCat === 'all' || p.category === currentCat;
+    const matchSearch = !q ||
+      p.name.toLowerCase().includes(q) ||
+      p.nameEn.toLowerCase().includes(q);
+    return matchCat && matchSearch;
+  });
+
+  countEl.textContent = `${filtered.length}마리`;
+
+  if (filtered.length === 0) {
+    list.innerHTML = '<div class="empty">검색 결과가 없습니다.</div>';
+    return;
+  }
+
+  list.innerHTML = filtered.map(p => `
+    <div class="card">
+      <div class="card-info">
+        <div class="card-name">${escapeHtml(p.name)}</div>
+        <div class="card-name-en">${escapeHtml(p.nameEn)}</div>
+        ${p.note ? `<div class="card-note">${escapeHtml(p.note)}</div>` : ''}
+      </div>
+      <span class="badge badge-${p.category}">${CATEGORY_LABELS[p.category]}</span>
+    </div>
+  `).join('');
+}
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
+}
+
+// 검색
+document.getElementById('search').addEventListener('input', e => {
+  currentQuery = e.target.value;
+  render();
+});
+
+// 필터 버튼
+document.getElementById('filters').addEventListener('click', e => {
+  const btn = e.target.closest('.filter-btn');
+  if (!btn) return;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentCat = btn.dataset.cat;
+  render();
+});
+
+loadData();
+</script>
+
+</body>
+</html>
