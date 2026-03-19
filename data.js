@@ -57,94 +57,122 @@ const POKEMON_DATA = {
     { "name": "라티아스", "nameEn": "Latias", "category": "powerup", "fast": ["드래곤브레스", "로킥"], "charged": ["역린", "사이코키네시스"], "note": "#50 메가진화 가능, 드래곤/에스퍼 전설" },
 
     // ===== 하이퍼리그 (Ultra League) S 티어 =====
-    { "name": "레지스틸", "nameEn": "Registeel", "category": ["ultra", "super"], "fast": ["록온", "메탈크루"], "charged": ["기합구슬", "자핑캐논"], "note": "극탱커, 자핑캐논 추천" },
-    { "name": "크레세리아", "nameEn": "Cresselia", "category": "ultra", "fast": ["신통력", "염동력"], "charged": ["문블라스트", "풀묶기"], "note": "탱커, 문블라스트 필수" },
-    { "name": "대로트", "nameEn": "Trevenant", "category": ["ultra", "super"], "fast": ["섀도우크루", "기습"], "charged": ["씨폭탄", "섀도우볼"], "note": "XL 사탕 필요, 풀/고스트" },
-    { "name": "니드퀸", "nameEn": "Nidoqueen", "category": ["ultra", "super"], "fast": ["독찌르기", "물기"], "charged": ["독엄니", "대지의힘"], "note": "섀도우 추천, 디버프 전략" },
-    { "name": "씨카이저", "nameEn": "Walrein", "category": "ultra", "fast": ["얼음엄니", "물대포"], "charged": ["고드름침", "지진"], "note": "커뮤데이 기술 필수" },
-    { "name": "코바르온", "nameEn": "Cobalion", "category": "ultra", "fast": ["더블킥", "메탈크루"], "charged": ["성스러운검", "스톤엣지"], "note": "강철/격투, 밸런스형" },
-    { "name": "대짱이", "nameEn": "Swampert", "category": ["ultra", "super"], "fast": ["머드샷", "물대포"], "charged": ["하이드로캐논", "지진"], "note": "커뮤데이 기술 필수, 물/땅" },
-    { "name": "블래키", "nameEn": "Umbreon", "category": ["ultra", "super"], "fast": ["으르렁", "속이기"], "charged": ["파울플레이", "라스트리조트"], "note": "XL 사탕 필요, 극탱커" },
-    // 기라티나(오리진)은 위 기라티나 엔트리에 합침
+    { "name": "찌리배리", "nameEn": "Bellibolt", "category": "ultra", "fast": ["전기쇼크"], "charged": ["패러볼릭차지", "방전"], "note": "#하1 하이퍼리그 탑티어, 패러볼릭차지 버프" },
+    { "name": "레지스틸", "nameEn": "Registeel", "category": ["ultra", "super"], "fast": ["록온", "메탈크루"], "charged": ["기합구슬", "자핑캐논"], "note": "#하2 극탱커, 자핑캐논 추천" },
+    { "name": "크레세리아", "nameEn": "Cresselia", "category": "ultra", "fast": ["신통력", "염동력"], "charged": ["문블라스트", "풀묶기"], "note": "#하3 탱커, 문블라스트 필수" },
+    { "name": "아머까오", "nameEn": "Corviknight", "category": ["ultra", "super"], "fast": ["에어슬래시", "강철날개"], "charged": ["브레이브버드", "아이언헤드"], "note": "#하4 비행/강철, 하이퍼/슈퍼리그 S티어" },
+    { "name": "라우드본", "nameEn": "Skeledirge", "category": ["ultra", "super"], "fast": ["소각"], "charged": ["토치송", "섀도우볼"], "note": "#하5 불꽃/고스트, 하이퍼/슈퍼리그 S티어" },
+    { "name": "강챙이", "nameEn": "Poliwrath", "category": ["ultra", "super"], "fast": ["카운터", "머드샷"], "charged": ["열탕", "아이시윈드"], "note": "#하6 물/격투, 하이퍼리그 S티어, 슈퍼리그 A티어" },
+    { "name": "코바르온", "nameEn": "Cobalion", "category": "ultra", "fast": ["더블킥", "메탈크루"], "charged": ["성스러운검", "스톤엣지"], "note": "#하7 강철/격투, 밸런스형" },
+    { "name": "씨카이저", "nameEn": "Walrein", "category": "ultra", "fast": ["얼음엄니", "물대포"], "charged": ["고드름침", "지진"], "note": "#하8 커뮤데이 기술 필수" },
+    { "name": "대로트", "nameEn": "Trevenant", "category": ["ultra", "super"], "fast": ["섀도우크루", "기습"], "charged": ["씨폭탄", "섀도우볼"], "note": "#하9 XL 사탕 필요, 풀/고스트" },
+    { "name": "꼬이밍고", "nameEn": "Flamigo", "category": "ultra", "fast": ["더블킥", "윙어택"], "charged": ["어퍼핸드", "브레이브버드"], "note": "#하10 비행/격투, 하이퍼리그 S티어" },
 
     // ===== 하이퍼리그 (Ultra League) A 티어 =====
-    { "name": "덩쿠림보", "nameEn": "Tangrowth", "category": "ultra", "fast": ["덩굴채찍", "벌레침입"], "charged": ["파워휩", "암석봉인"], "note": "XL 사탕 필요, 풀 탱커" },
-    { "name": "독개굴", "nameEn": "Toxicroak", "category": ["ultra", "super"], "fast": ["카운터", "독찌르기"], "charged": ["머드봄", "오물웨이브"], "note": "격투/독, 쉴드 압박" },
-    { "name": "무장조", "nameEn": "Skarmory", "category": ["ultra", "super"], "fast": ["에어슬래시", "강철날개"], "charged": ["브레이브버드", "하늘깨기"], "note": "강철/비행 탱커, 하이퍼리그 XL 사탕 필요" },
-    { "name": "라프라스", "nameEn": "Lapras", "category": ["ultra", "super"], "fast": ["아이스샤드", "물대포"], "charged": ["서핑", "냉동빔"], "note": "얼음/물 탱커" },
-    { "name": "강철톤", "nameEn": "Steelix", "category": "ultra", "fast": ["드래곤테일", "아이언테일"], "charged": ["깨물어부수기", "지진"], "note": "XL 사탕 필요, 강철/땅 탱커" },
-    { "name": "탱탱겔", "nameEn": "Jellicent", "category": "ultra", "fast": ["헥스", "거품"], "charged": ["섀도우볼", "거품광선"], "note": "물/고스트, 탱커" },
-    { "name": "드래피온", "nameEn": "Drapion", "category": "ultra", "fast": ["독찌르기", "물기"], "charged": ["깨물어부수기", "아쿠아테일"], "note": "독/악, 약점 적음" },
-    { "name": "가로막구리", "nameEn": "Obstagoon", "category": "ultra", "fast": ["카운터", "핥기"], "charged": ["야습", "크로스촙"], "note": "악/노말, 격투 이중약점 주의" },
-    { "name": "눈여아", "nameEn": "Froslass", "category": "ultra", "fast": ["눈싸라기", "헥스"], "charged": ["눈사태", "섀도우볼"], "note": "얼음/고스트, 쉴드 압박" },
-    { "name": "파비코리", "nameEn": "Altaria", "category": "ultra", "fast": ["드래곤브레스", "짓찧기"], "charged": ["문포스", "하늘깨기"], "note": "XL 사탕 필요, 드래곤/비행" },
-    { "name": "야도란(가라르)", "nameEn": "Slowbro (Galarian)", "category": ["ultra", "super"], "fast": ["독찌르기", "염동력"], "charged": ["기합구슬", "오물웨이브"], "note": "가라르폼, 독/에스퍼" },
-    { "name": "엠페르트", "nameEn": "Empoleon", "category": "ultra", "fast": ["폭포", "메탈크루"], "charged": ["하이드로캐논", "드릴쪼기"], "note": "커뮤데이 기술 필수, 물/강철" },
-    { "name": "번치코", "nameEn": "Blaziken", "category": ["ultra", "super"], "fast": ["카운터", "불꽃소용돌이"], "charged": ["블라스트번", "브레이브버드"], "note": "커뮤데이 기술 필수, 불꽃/격투" },
-    { "name": "엘레이드", "nameEn": "Gallade", "category": "ultra", "fast": ["염동력", "로킥"], "charged": ["인파이트", "리프블레이드"], "note": "에스퍼/격투, 공격형" },
-    { "name": "누오", "nameEn": "Quagsire", "category": "ultra", "fast": ["머드샷", "물대포"], "charged": ["스톤엣지", "지진"], "note": "XL 사탕 필요, 물/땅" },
-    { "name": "요씽리스", "nameEn": "Greedent", "category": "ultra", "fast": ["불릿시드", "몸통박치기"], "charged": ["바디슬램", "깨물어부수기"], "note": "노말, XL 사탕 필요" },
-    { "name": "하리뭉", "nameEn": "Hariyama", "category": "ultra", "fast": ["카운터", "불릿펀치"], "charged": ["인파이트", "헤비봄버"], "note": "격투 탱커" },
-    { "name": "장크로다일", "nameEn": "Feraligatr", "category": "ultra", "fast": ["물대포", "얼음엄니"], "charged": ["하이드로캐논", "냉동빔"], "note": "커뮤데이 기술 필수, 물" },
-    { "name": "바리톱스", "nameEn": "Bastiodon", "category": ["ultra", "super"], "fast": ["스매크다운", "아이언테일"], "charged": ["스톤엣지", "래스터캐논"], "note": "XL 사탕 필요, 극탱커" },
-    { "name": "저승갓숭", "nameEn": "Annihilape", "category": ["ultra", "super"], "fast": ["카운터", "섀도우크루"], "charged": ["섀도우볼", "인파이트"], "note": "격투/고스트, XL 사탕 필요" },
-    { "name": "토오", "nameEn": "Clodsire", "category": ["ultra", "super"], "fast": ["독찌르기", "머드샷"], "charged": ["지진", "스톤엣지"], "note": "독/땅, 탱커" },
+    { "name": "대짱이", "nameEn": "Swampert", "category": ["ultra", "super"], "fast": ["머드샷", "물대포"], "charged": ["하이드로캐논", "지진"], "note": "#하11 커뮤데이 기술 필수, 물/땅" },
+    { "name": "블래키", "nameEn": "Umbreon", "category": ["ultra", "super"], "fast": ["으르렁", "속이기"], "charged": ["파울플레이", "라스트리조트"], "note": "#하12 XL 사탕 필요, 극탱커" },
+    { "name": "저승갓숭", "nameEn": "Annihilape", "category": ["ultra", "super"], "fast": ["카운터", "섀도우크루"], "charged": ["섀도우볼", "인파이트"], "note": "#하13 격투/고스트, XL 사탕 필요" },
+    { "name": "토오", "nameEn": "Clodsire", "category": ["ultra", "super"], "fast": ["독찌르기", "머드샷"], "charged": ["지진", "스톤엣지"], "note": "#하14 독/땅, 탱커" },
+    { "name": "니드퀸", "nameEn": "Nidoqueen", "category": ["ultra", "super"], "fast": ["독찌르기", "물기"], "charged": ["독엄니", "대지의힘"], "note": "#하15 섀도우 추천, 디버프 전략" },
+    { "name": "삼삼드래", "nameEn": "Hydreigon", "category": "ultra", "fast": ["물기", "드래곤브레스"], "charged": ["잔혹한일격", "용의파동"], "note": "#하16 악/드래곤, 하이퍼리그 A티어" },
+    { "name": "플라제스", "nameEn": "Florges", "category": "ultra", "fast": ["참", "요정의바람"], "charged": ["매지컬샤인", "사이코키네시스"], "note": "#하17 페어리, 하이퍼리그 A티어" },
+    { "name": "탱탱겔", "nameEn": "Jellicent", "category": "ultra", "fast": ["헥스", "거품"], "charged": ["섀도우볼", "거품광선"], "note": "#하18 물/고스트, 탱커" },
+    { "name": "강철톤", "nameEn": "Steelix", "category": "ultra", "fast": ["드래곤테일", "아이언테일"], "charged": ["깨물어부수기", "지진"], "note": "#하19 XL 사탕 필요, 강철/땅 탱커" },
+    { "name": "비리디온", "nameEn": "Virizion", "category": "ultra", "fast": ["더블킥"], "charged": ["리프블레이드", "성스러운검"], "note": "#하20 전설, 풀/격투, 엘리트TM 추천" },
+    { "name": "레지드래고", "nameEn": "Regidrago", "category": "ultra", "fast": ["드래곤브레스"], "charged": ["드래곤에너지", "바이스그립"], "note": "#하21 드래곤, 전설, 엘리트TM 필요" },
+    { "name": "독개굴", "nameEn": "Toxicroak", "category": ["ultra", "super"], "fast": ["카운터", "독찌르기"], "charged": ["머드봄", "오물웨이브"], "note": "#하22 격투/독, 쉴드 압박" },
+    { "name": "무장조", "nameEn": "Skarmory", "category": ["ultra", "super"], "fast": ["에어슬래시", "강철날개"], "charged": ["브레이브버드", "하늘깨기"], "note": "#하23 강철/비행 탱커, 하이퍼리그 XL 사탕 필요" },
+    { "name": "라프라스", "nameEn": "Lapras", "category": ["ultra", "super"], "fast": ["아이스샤드", "물대포"], "charged": ["서핑", "냉동빔"], "note": "#하24 얼음/물 탱커" },
+    { "name": "드래피온", "nameEn": "Drapion", "category": "ultra", "fast": ["독찌르기", "물기"], "charged": ["깨물어부수기", "아쿠아테일"], "note": "#하25 독/악, 약점 적음" },
 
     // ===== 하이퍼리그 (Ultra League) B 티어 =====
-    { "name": "야도킹(가라르)", "nameEn": "Slowking (Galarian)", "category": "ultra", "fast": ["독찌르기", "염동력"], "charged": ["오물웨이브", "섀도우볼"], "note": "가라르폼, 독/에스퍼" },
-    { "name": "전지충이", "nameEn": "Charjabug", "category": ["ultra", "super"], "fast": ["스파크", "벌레먹기"], "charged": ["방전", "엑스시저"], "note": "벌레/전기 탱커, XL 사탕 필요" },
-    { "name": "샤로다", "nameEn": "Serperior", "category": "ultra", "fast": ["덩굴채찍", "아이언테일"], "charged": ["하드플랜트", "공중날기"], "note": "커뮤데이 기술 필수, 풀" },
-    { "name": "토대부기", "nameEn": "Torterra", "category": "ultra", "fast": ["면도날잎", "물기"], "charged": ["하드플랜트", "스톤엣지"], "note": "커뮤데이 기술 필수, 풀/땅" },
-    { "name": "괴력몬(섀도우)", "nameEn": "Machamp (Shadow)", "category": ["ultra", "super"], "fast": ["카운터", "불릿펀치"], "charged": ["크로스촙", "록슬라이드"], "note": "섀도우 격투 공격형" },
-    { "name": "야부엉", "nameEn": "Noctowl", "category": ["ultra", "super"], "fast": ["날개치기", "신통력"], "charged": ["하늘깨기", "사이코키네시스"], "note": "XL 사탕 필요, 노말/비행 탱커" },
-    { "name": "미끄래곤", "nameEn": "Goodra", "category": "ultra", "fast": ["드래곤브레스", "물대포"], "charged": ["파워휩", "머디워터"], "note": "드래곤, 다양한 기술배치" },
-    { "name": "눈설왕", "nameEn": "Abomasnow", "category": "ultra", "fast": ["눈싸라기", "면도날잎"], "charged": ["날씨볼", "에너지볼"], "note": "풀/얼음, 빠른 차지무브" },
-    { "name": "슈바르고", "nameEn": "Escavalier", "category": "ultra", "fast": ["카운터", "벌레먹기"], "charged": ["메가호른", "드릴쪼기"], "note": "벌레/강철" },
-    { "name": "해피너스", "nameEn": "Blissey", "category": "ultra", "fast": ["짓찧기", "선취"], "charged": ["사이코키네시스", "매지컬샤인"], "note": "체육관 방어 전용, 극탱커" },
-    { "name": "플라이곤", "nameEn": "Flygon", "category": "ultra", "fast": ["머드샷", "드래곤테일"], "charged": ["드래곤크루", "대지의힘"], "note": "땅/드래곤, 접근성 좋음" },
-
-    { "name": "스완나", "nameEn": "Swanna", "category": "ultra", "fast": ["에어슬래시", "물대포"], "charged": ["냉동빔", "허리케인"], "note": "물/비행, 접근성 좋음" },
-    { "name": "너트령", "nameEn": "Ferrothorn", "category": ["ultra", "super"], "fast": ["덩굴채찍", "메탈크루"], "charged": ["파워휩", "미러샷"], "note": "풀/강철 탱커" },
-
-    { "name": "폴리곤Z", "nameEn": "Porygon-Z", "category": ["ultra", "super"], "fast": ["록온", "차지빔"], "charged": ["트라이어택", "섀도우볼"], "note": "노말, 커뮤데이 기술 추천" },
-    { "name": "마기라스(섀도우)", "nameEn": "Tyranitar (Shadow)", "category": "ultra", "fast": ["물기", "스매크다운"], "charged": ["깨물어부수기", "스톤엣지"], "note": "섀도우, 악/바위" },
+    { "name": "덩쿠림보", "nameEn": "Tangrowth", "category": "ultra", "fast": ["덩굴채찍", "벌레침입"], "charged": ["파워휩", "암석봉인"], "note": "#하26 XL 사탕 필요, 풀 탱커" },
+    { "name": "가로막구리", "nameEn": "Obstagoon", "category": "ultra", "fast": ["카운터", "핥기"], "charged": ["야습", "크로스촙"], "note": "#하27 악/노말, 격투 이중약점 주의" },
+    { "name": "눈여아", "nameEn": "Froslass", "category": "ultra", "fast": ["눈싸라기", "헥스"], "charged": ["눈사태", "섀도우볼"], "note": "#하28 얼음/고스트, 쉴드 압박" },
+    { "name": "파비코리", "nameEn": "Altaria", "category": "ultra", "fast": ["드래곤브레스", "짓찧기"], "charged": ["문포스", "하늘깨기"], "note": "#하29 XL 사탕 필요, 드래곤/비행" },
+    { "name": "야도란(가라르)", "nameEn": "Slowbro (Galarian)", "category": ["ultra", "super"], "fast": ["독찌르기", "염동력"], "charged": ["기합구슬", "오물웨이브"], "note": "#하30 가라르폼, 독/에스퍼" },
+    { "name": "엠페르트", "nameEn": "Empoleon", "category": "ultra", "fast": ["폭포", "메탈크루"], "charged": ["하이드로캐논", "드릴쪼기"], "note": "#하31 커뮤데이 기술 필수, 물/강철" },
+    { "name": "번치코", "nameEn": "Blaziken", "category": ["ultra", "super"], "fast": ["카운터", "불꽃소용돌이"], "charged": ["블라스트번", "브레이브버드"], "note": "#하32 커뮤데이 기술 필수, 불꽃/격투" },
+    { "name": "너트령", "nameEn": "Ferrothorn", "category": ["ultra", "super"], "fast": ["덩굴채찍", "메탈크루"], "charged": ["파워휩", "미러샷"], "note": "#하33 풀/강철 탱커" },
+    { "name": "바리톱스", "nameEn": "Bastiodon", "category": ["ultra", "super"], "fast": ["스매크다운", "아이언테일"], "charged": ["스톤엣지", "래스터캐논"], "note": "#하34 XL 사탕 필요, 극탱커" },
+    { "name": "전지충이", "nameEn": "Charjabug", "category": ["ultra", "super"], "fast": ["스파크", "벌레먹기"], "charged": ["방전", "엑스시저"], "note": "#하35 벌레/전기 탱커, XL 사탕 필요" },
+    { "name": "야부엉", "nameEn": "Noctowl", "category": ["ultra", "super"], "fast": ["날개치기", "신통력"], "charged": ["하늘깨기", "사이코키네시스"], "note": "#하36 XL 사탕 필요, 노말/비행 탱커" },
+    { "name": "장크로다일", "nameEn": "Feraligatr", "category": "ultra", "fast": ["물대포", "얼음엄니"], "charged": ["하이드로캐논", "냉동빔"], "note": "#하37 커뮤데이 기술 필수, 물" },
+    { "name": "괴력몬(섀도우)", "nameEn": "Machamp (Shadow)", "category": ["ultra", "super"], "fast": ["카운터", "불릿펀치"], "charged": ["크로스촙", "록슬라이드"], "note": "#하38 섀도우 격투 공격형" },
+    { "name": "엘레이드", "nameEn": "Gallade", "category": "ultra", "fast": ["염동력", "로킥"], "charged": ["인파이트", "리프블레이드"], "note": "#하39 에스퍼/격투, 공격형" },
+    { "name": "누오", "nameEn": "Quagsire", "category": "ultra", "fast": ["머드샷", "물대포"], "charged": ["스톤엣지", "지진"], "note": "#하40 XL 사탕 필요, 물/땅" },
+    { "name": "미끄래곤", "nameEn": "Goodra", "category": "ultra", "fast": ["드래곤브레스", "물대포"], "charged": ["파워휩", "머디워터"], "note": "#하41 드래곤, 다양한 기술배치" },
+    { "name": "폴리곤Z", "nameEn": "Porygon-Z", "category": ["ultra", "super"], "fast": ["록온", "차지빔"], "charged": ["트라이어택", "섀도우볼"], "note": "#하42 노말, 커뮤데이 기술 추천" },
+    { "name": "샤로다", "nameEn": "Serperior", "category": "ultra", "fast": ["덩굴채찍", "아이언테일"], "charged": ["하드플랜트", "공중날기"], "note": "#하43 커뮤데이 기술 필수, 풀" },
+    { "name": "토대부기", "nameEn": "Torterra", "category": "ultra", "fast": ["면도날잎", "물기"], "charged": ["하드플랜트", "스톤엣지"], "note": "#하44 커뮤데이 기술 필수, 풀/땅" },
+    { "name": "눈설왕", "nameEn": "Abomasnow", "category": "ultra", "fast": ["눈싸라기", "면도날잎"], "charged": ["날씨볼", "에너지볼"], "note": "#하45 풀/얼음, 빠른 차지무브" },
+    { "name": "슈바르고", "nameEn": "Escavalier", "category": "ultra", "fast": ["카운터", "벌레먹기"], "charged": ["메가호른", "드릴쪼기"], "note": "#하46 벌레/강철" },
+    { "name": "야도킹(가라르)", "nameEn": "Slowking (Galarian)", "category": "ultra", "fast": ["독찌르기", "염동력"], "charged": ["오물웨이브", "섀도우볼"], "note": "#하47 가라르폼, 독/에스퍼" },
+    { "name": "마기라스(섀도우)", "nameEn": "Tyranitar (Shadow)", "category": "ultra", "fast": ["물기", "스매크다운"], "charged": ["깨물어부수기", "스톤엣지"], "note": "#하48 섀도우, 악/바위" },
+    { "name": "플라이곤", "nameEn": "Flygon", "category": "ultra", "fast": ["머드샷", "드래곤테일"], "charged": ["드래곤크루", "대지의힘"], "note": "#하49 땅/드래곤, 접근성 좋음" },
+    { "name": "하리뭉", "nameEn": "Hariyama", "category": "ultra", "fast": ["카운터", "불릿펀치"], "charged": ["인파이트", "헤비봄버"], "note": "#하50 격투 탱커" },
+    { "name": "스완나", "nameEn": "Swanna", "category": "ultra", "fast": ["에어슬래시", "물대포"], "charged": ["냉동빔", "허리케인"], "note": "#하51 물/비행, 접근성 좋음" },
+    { "name": "요씽리스", "nameEn": "Greedent", "category": "ultra", "fast": ["불릿시드", "몸통박치기"], "charged": ["바디슬램", "깨물어부수기"], "note": "#하52 노말, XL 사탕 필요" },
+    { "name": "해피너스", "nameEn": "Blissey", "category": "ultra", "fast": ["짓찧기", "선취"], "charged": ["사이코키네시스", "매지컬샤인"], "note": "#하53 체육관 방어 전용, 극탱커" },
     { "name": "쌍검킬", "nameEn": "Doublade", "category": "dex", "fast": [], "charged": [], "note": "외뿔검 → 쌍검킬 → 킹검 (고스트/강철)" },
 
-    // === 슈퍼리그 (Great League) S 티어 ===
-    { "name": "마릴리", "nameEn": "Azumarill", "category": "super", "fast": ["거품", "바위깨기"], "charged": ["냉동빔", "하이드로펌프"], "note": "슈퍼리그 탑티어, XL사탕 필요" },
-    { "name": "요가램", "nameEn": "Medicham", "category": "super", "fast": ["카운터", "신통력"], "charged": ["냉동펀치", "사이코키네시스"], "note": "XL사탕 필요, 격투 탑" },
+    // ===== 슈퍼리그 (Great League) S 티어 =====
+    { "name": "마릴리", "nameEn": "Azumarill", "category": "super", "fast": ["거품", "바위깨기"], "charged": ["냉동빔", "하이드로펌프"], "note": "#슈1 슈퍼리그 탑티어, XL사탕 필요" },
+    { "name": "멜리시", "nameEn": "Carbink", "category": "super", "fast": ["바위던지기", "돌진"], "charged": ["록슬라이드", "문블라스트"], "note": "#슈2 바위/페어리 탱커, XL사탕 필요" },
+    // 레지스틸은 하이퍼리그 섹션에 #하2로 등록됨 (["ultra", "super"])
+    { "name": "요가램", "nameEn": "Medicham", "category": "super", "fast": ["카운터", "신통력"], "charged": ["냉동펀치", "사이코키네시스"], "note": "#슈4 XL사탕 필요, 격투 탑" },
+    // 아머까오는 하이퍼리그 섹션에 #하4로 등록됨 (["ultra", "super"])
+    // 라우드본은 하이퍼리그 섹션에 #하5로 등록됨 (["ultra", "super"])
+    // 저승갓숭은 하이퍼리그 섹션에 #하13으로 등록됨 (["ultra", "super"])
+    { "name": "다꼬리", "nameEn": "Furret", "category": "super", "fast": ["속이기"], "charged": ["스위프트", "트레일블레이즈"], "note": "#슈8 2025 버프, 슈퍼리그 탑티어" },
+    { "name": "푸크린", "nameEn": "Wigglytuff", "category": "super", "fast": ["참"], "charged": ["아이시윈드", "디사밍보이스"], "note": "#슈9 노말/페어리, 슈퍼리그 S티어" },
+    { "name": "깜까미", "nameEn": "Sableye", "category": "super", "fast": ["섀도우크루", "속이기"], "charged": ["파울플레이", "리턴"], "note": "#슈10 XL사탕 필요, 정화 추천" },
 
-    // === 슈퍼리그 A 티어 ===
-    { "name": "날쌩마(가라르)", "nameEn": "Rapidash (Galarian)", "category": "super", "fast": ["요정의바람", "신통력"], "charged": ["바디슬램", "메가호른"], "note": "가라르폼, 페어리" },
+    // ===== 슈퍼리그 (Great League) A 티어 =====
+    // 바리톱스는 하이퍼리그 섹션에 #하34로 등록됨 (["ultra", "super"])
+    // 대로트는 하이퍼리그 섹션에 #하9로 등록됨 (["ultra", "super"])
+    // 니드퀸은 하이퍼리그 섹션에 #하15로 등록됨 (["ultra", "super"])
+    // 대짱이는 하이퍼리그 섹션에 #하11로 등록됨 (["ultra", "super"])
+    // 블래키는 하이퍼리그 섹션에 #하12로 등록됨 (["ultra", "super"])
+    // 토오는 하이퍼리그 섹션에 #하14로 등록됨 (["ultra", "super"])
+    // 무장조는 하이퍼리그 섹션에 #하23으로 등록됨 (["ultra", "super"])
+    { "name": "내루미", "nameEn": "Lickitung", "category": "super", "fast": ["핥기", "선취"], "charged": ["바디슬램", "파워휩"], "note": "#슈18 XL사탕 필요, 극탱커" },
+    // 강챙이는 하이퍼리그 섹션에 #하6으로 등록됨 (["ultra", "super"])
+    // 독개굴은 하이퍼리그 섹션에 #하22로 등록됨 (["ultra", "super"])
+    // 너트령은 하이퍼리그 섹션에 #하33으로 등록됨 (["ultra", "super"])
+    { "name": "릴리요", "nameEn": "Cradily", "category": "super", "fast": ["불릿시드", "산성"], "charged": ["록툼", "그래스노트"], "note": "#슈22 바위/풀, 2025 록툼 버프로 슈퍼리그 주요 픽" },
+    { "name": "데덴네", "nameEn": "Dedenne", "category": "super", "fast": ["전기쇼크"], "charged": ["방전", "플레이라프"], "note": "#슈23 전기/페어리, 슈퍼리그 A티어" },
+    // 라프라스는 하이퍼리그 섹션에 #하24로 등록됨 (["ultra", "super"])
+    // 야부엉은 하이퍼리그 섹션에 #하36으로 등록됨 (["ultra", "super"])
 
-    { "name": "라이츄(알로라)", "nameEn": "Raichu (Alolan)", "category": "super", "fast": ["볼트체인지", "스파크"], "charged": ["와일드볼트", "사이코키네시스"], "note": "알로라폼" },
-    { "name": "패리퍼", "nameEn": "Pelipper", "category": "super", "fast": ["윙어택", "물대포"], "charged": ["웨더볼(물)", "허리케인"], "note": "물/비행" },
-    { "name": "리자몽(섀도우)", "nameEn": "Charizard (Shadow)", "category": "super", "fast": ["불꽃소용돌이", "에어슬래시"], "charged": ["블라스트번", "드래곤크루"], "note": "섀도우, 커뮤데이 무브" },
-    // 무장조는 하이퍼리그 섹션에 등록됨
-    { "name": "독파리", "nameEn": "Tentacruel", "category": "super", "fast": ["독찌르기", "물대포"], "charged": ["독엄니", "애시드밤"], "note": "물/독 탱커" },
+    // ===== 슈퍼리그 (Great League) B 티어 =====
+    // 전지충이는 하이퍼리그 섹션에 #하35로 등록됨 (["ultra", "super"])
+    // 번치코는 하이퍼리그 섹션에 #하32로 등록됨 (["ultra", "super"])
+    // 야도란(가라르)은 하이퍼리그 섹션에 #하30으로 등록됨 (["ultra", "super"])
+    // 괴력몬(섀도우)은 하이퍼리그 섹션에 #하38로 등록됨 (["ultra", "super"])
+    { "name": "날쌩마(가라르)", "nameEn": "Rapidash (Galarian)", "category": "super", "fast": ["요정의바람", "신통력"], "charged": ["바디슬램", "메가호른"], "note": "#슈30 가라르폼, 페어리" },
+    { "name": "라이츄(알로라)", "nameEn": "Raichu (Alolan)", "category": "super", "fast": ["볼트체인지", "스파크"], "charged": ["와일드볼트", "사이코키네시스"], "note": "#슈31 알로라폼" },
+    { "name": "패리퍼", "nameEn": "Pelipper", "category": "super", "fast": ["윙어택", "물대포"], "charged": ["웨더볼(물)", "허리케인"], "note": "#슈32 물/비행" },
+    { "name": "리자몽(섀도우)", "nameEn": "Charizard (Shadow)", "category": "super", "fast": ["불꽃소용돌이", "에어슬래시"], "charged": ["블라스트번", "드래곤크루"], "note": "#슈33 섀도우, 커뮤데이 무브" },
+    { "name": "독파리", "nameEn": "Tentacruel", "category": "super", "fast": ["독찌르기", "물대포"], "charged": ["독엄니", "애시드밤"], "note": "#슈34 물/독 탱커" },
     { "name": "고우스트", "nameEn": "Haunter", "category": "dex", "fast": [], "charged": [], "note": "고오스 → 고우스트 → 팬텀(겐가르) 진화 중간단계" },
     { "name": "고우스트(섀도우)", "nameEn": "Haunter (Shadow)", "category": "dex", "fast": [], "charged": [], "note": "섀도우 버전, 팬텀(겐가르)으로 진화 추천" },
-    { "name": "깜까미", "nameEn": "Sableye", "category": "super", "fast": ["섀도우크루", "속이기"], "charged": ["파울플레이", "리턴"], "note": "XL사탕 필요, 정화 추천" },
-    { "name": "붐볼(히스이)", "nameEn": "Electrode (Hisuian)", "category": "super", "fast": ["볼트체인지", "선더쇼크"], "charged": ["에너지볼", "와일드볼트"], "note": "히스이폼, 전기/풀" },
-    { "name": "프리져(가라르)", "nameEn": "Articuno (Galarian)", "category": "super", "fast": ["신통력", "혼란"], "charged": ["미래예지", "고대의힘"], "note": "가라르폼, 전설" },
-    { "name": "대코파스", "nameEn": "Probopass", "category": "super", "fast": ["스파크", "바위던지기"], "charged": ["매그넷봄", "록슬라이드"], "note": "바위/강철 탱커" },
-
-    // === 슈퍼리그 B 티어 ===
-    { "name": "뮤", "nameEn": "Mew", "category": "super", "fast": ["섀도우크루", "볼트체인지"], "charged": ["서핑", "와일드볼트"], "note": "다양한 기술셋 가능" },
-    { "name": "둥실라이드", "nameEn": "Drifblim", "category": "super", "fast": ["헥스", "놀래키기"], "charged": ["아이시윈드", "섀도우볼"], "note": "고스트/비행" },
-    { "name": "멜리시", "nameEn": "Carbink", "category": "super", "fast": ["바위던지기", "돌진"], "charged": ["록슬라이드", "문블라스트"], "note": "바위/페어리 탱커, XL사탕 필요" },
-    { "name": "메깅", "nameEn": "Whiscash", "category": "super", "fast": ["머드샷", "물대포"], "charged": ["머드밤", "냉동빔"], "note": "물/땅 저코스트" },
-    { "name": "대짱이(섀도우)", "nameEn": "Swampert (Shadow)", "category": "super", "fast": ["머드샷", "물대포"], "charged": ["하이드로캐논", "지진"], "note": "섀도우, 커뮤데이 무브 필수" },
-    { "name": "나무킹", "nameEn": "Sceptile", "category": "super", "fast": ["덩굴채찍", "연속자르기"], "charged": ["리프블레이드", "지진"], "note": "풀 어태커" },
-    { "name": "내루미", "nameEn": "Lickitung", "category": "super", "fast": ["핥기", "선취"], "charged": ["바디슬램", "파워휩"], "note": "XL사탕 필요, 극탱커" },
-    { "name": "쥬레곤", "nameEn": "Dewgong", "category": "super", "fast": ["아이스샤드", "서리숨결"], "charged": ["아이시윈드", "물의파동"], "note": "레거시 무브 필요" },
-    { "name": "독개굴(섀도우)", "nameEn": "Toxicroak (Shadow)", "category": "super", "fast": ["카운터", "독찌르기"], "charged": ["머드밤", "폭발펀치"], "note": "섀도우, 격투/독" },
-    // 라티아스는 powerup에 등록됨
-    { "name": "워시로토무", "nameEn": "Wash Rotom", "category": "super", "fast": ["선더쇼크", "놀래키기"], "charged": ["하이드로펌프", "10만볼트"], "note": "전기/물" },
-    { "name": "갸라도스(섀도우)", "nameEn": "Gyarados (Shadow)", "category": "super", "fast": ["드래곤브레스", "폭포"], "charged": ["아쿠아테일", "깨물어부수기"], "note": "섀도우, 물/비행" },
-    { "name": "눈설왕(섀도우)", "nameEn": "Abomasnow (Shadow)", "category": "super", "fast": ["가루눈", "면도날잎"], "charged": ["웨더볼(얼음)", "에너지볼"], "note": "섀도우 추천, 풀/얼음" },
-    { "name": "어흥염", "nameEn": "Incineroar", "category": "super", "fast": ["불꽃소용돌이", "으르렁"], "charged": ["블라스트번", "다크래리어트"], "note": "불꽃/악" },
-    { "name": "마임꽁꽁", "nameEn": "Mr. Rime", "category": "super", "fast": ["아이스샤드", "혼란"], "charged": ["아이시윈드", "사이코키네시스"], "note": "얼음/에스퍼, 가라르 마임맨 진화" },
+    { "name": "대코파스", "nameEn": "Probopass", "category": "super", "fast": ["스파크", "바위던지기"], "charged": ["매그넷봄", "록슬라이드"], "note": "#슈35 바위/강철 탱커" },
+    { "name": "붐볼(히스이)", "nameEn": "Electrode (Hisuian)", "category": "super", "fast": ["볼트체인지", "선더쇼크"], "charged": ["에너지볼", "와일드볼트"], "note": "#슈36 히스이폼, 전기/풀" },
+    { "name": "프리져(가라르)", "nameEn": "Articuno (Galarian)", "category": "super", "fast": ["신통력", "혼란"], "charged": ["미래예지", "고대의힘"], "note": "#슈37 가라르폼, 전설" },
+    // 폴리곤Z는 하이퍼리그 섹션에 #하42로 등록됨 (["ultra", "super"])
+    { "name": "뮤", "nameEn": "Mew", "category": "super", "fast": ["섀도우크루", "볼트체인지"], "charged": ["서핑", "와일드볼트"], "note": "#슈39 다양한 기술셋 가능" },
+    { "name": "둥실라이드", "nameEn": "Drifblim", "category": "super", "fast": ["헥스", "놀래키기"], "charged": ["아이시윈드", "섀도우볼"], "note": "#슈40 고스트/비행" },
+    { "name": "메깅", "nameEn": "Whiscash", "category": "super", "fast": ["머드샷", "물대포"], "charged": ["머드밤", "냉동빔"], "note": "#슈41 물/땅 저코스트" },
+    { "name": "대짱이(섀도우)", "nameEn": "Swampert (Shadow)", "category": "super", "fast": ["머드샷", "물대포"], "charged": ["하이드로캐논", "지진"], "note": "#슈42 섀도우, 커뮤데이 무브 필수" },
+    { "name": "나무킹", "nameEn": "Sceptile", "category": "super", "fast": ["덩굴채찍", "연속자르기"], "charged": ["리프블레이드", "지진"], "note": "#슈43 풀 어태커" },
+    { "name": "쥬레곤", "nameEn": "Dewgong", "category": "super", "fast": ["아이스샤드", "서리숨결"], "charged": ["아이시윈드", "물의파동"], "note": "#슈44 레거시 무브 필요" },
+    { "name": "독개굴(섀도우)", "nameEn": "Toxicroak (Shadow)", "category": "super", "fast": ["카운터", "독찌르기"], "charged": ["머드밤", "폭발펀치"], "note": "#슈45 섀도우, 격투/독" },
+    { "name": "워시로토무", "nameEn": "Wash Rotom", "category": "super", "fast": ["선더쇼크", "놀래키기"], "charged": ["하이드로펌프", "10만볼트"], "note": "#슈46 전기/물" },
+    { "name": "갸라도스(섀도우)", "nameEn": "Gyarados (Shadow)", "category": "super", "fast": ["드래곤브레스", "폭포"], "charged": ["아쿠아테일", "깨물어부수기"], "note": "#슈47 섀도우, 물/비행" },
+    { "name": "눈설왕(섀도우)", "nameEn": "Abomasnow (Shadow)", "category": "super", "fast": ["가루눈", "면도날잎"], "charged": ["웨더볼(얼음)", "에너지볼"], "note": "#슈48 섀도우 추천, 풀/얼음" },
+    { "name": "어흥염", "nameEn": "Incineroar", "category": "super", "fast": ["불꽃소용돌이", "으르렁"], "charged": ["블라스트번", "다크래리어트"], "note": "#슈49 불꽃/악" },
+    { "name": "마임꽁꽁", "nameEn": "Mr. Rime", "category": "super", "fast": ["아이스샤드", "혼란"], "charged": ["아이시윈드", "사이코키네시스"], "note": "#슈50 얼음/에스퍼, 가라르 마임맨 진화" },
 
     // ===== Gen 1 (#1-151) 도감/버림 =====
     { "name": "이상해씨", "nameEn": "Bulbasaur", "category": "dex", "fast": [], "charged": [], "note": "이상해씨 → 이상해풀 → 이상해꽃 (풀/독 어태커)" },
@@ -287,7 +315,6 @@ const POKEMON_DATA = {
     { "name": "리아코", "nameEn": "Totodile", "category": "dex", "fast": [], "charged": [], "note": "리아코 → 엘리게이 → 장크로다일 (물 어태커)" },
     { "name": "엘리게이", "nameEn": "Croconaw", "category": "dex", "fast": [], "charged": [], "note": "리아코 → 엘리게이 → 장크로다일" },
     { "name": "꼬리선", "nameEn": "Sentret", "category": "trash", "fast": [], "charged": [], "note": "꼬리선 → 다꼬리" },
-    { "name": "다꼬리", "nameEn": "Furret", "category": "super", "fast": ["속이기"], "charged": ["스위프트", "트레일블레이즈"], "note": "2025 버프, 슈퍼리그 탑티어" },
     { "name": "부우부", "nameEn": "Hoothoot", "category": "dex", "fast": [], "charged": [], "note": "부우부 → 야부엉 (PvP 탱커)" },
     { "name": "레디바", "nameEn": "Ledyba", "category": "trash", "fast": [], "charged": [], "note": "레디바 → 레디안" },
     { "name": "레디안", "nameEn": "Ledian", "category": "trash", "fast": [], "charged": [], "note": "" },
@@ -436,7 +463,6 @@ const POKEMON_DATA = {
     { "name": "오뚝군", "nameEn": "Baltoy", "category": "trash", "fast": [], "charged": [], "note": "오뚝군 → 점토도리" },
     { "name": "점토도리", "nameEn": "Claydol", "category": "trash", "fast": [], "charged": [], "note": "땅/에스퍼" },
     { "name": "릴링", "nameEn": "Lileep", "category": "dex", "fast": [], "charged": [], "note": "릴링 → 릴리요 (화석)" },
-    { "name": "릴리요", "nameEn": "Cradily", "category": "super", "fast": ["불릿시드", "산성"], "charged": ["록툼", "그래스노트"], "note": "바위/풀, 2025 록툼 버프로 슈퍼리그 주요 픽" },
     { "name": "아노딥스", "nameEn": "Anorith", "category": "dex", "fast": [], "charged": [], "note": "아노딥스 → 아말도 (화석)" },
     { "name": "아말도", "nameEn": "Armaldo", "category": "dex", "fast": [], "charged": [], "note": "바위/벌레, 화석 포켓몬" },
     { "name": "빈티나", "nameEn": "Feebas", "category": "dex", "fast": [], "charged": [], "note": "빈티나 → 밀로틱 (사탕+걷기 20km)" },
@@ -868,7 +894,6 @@ const POKEMON_DATA = {
     // --- 모노두 라인 ---
     { "name": "모노두", "nameEn": "Deino", "category": "dex", "fast": [], "charged": [], "note": "모노두 → 디헤드 → 삼삼드래 (희귀)" },
     { "name": "디헤드", "nameEn": "Zweilous", "category": "dex", "fast": [], "charged": [], "note": "모노두 → 디헤드 → 삼삼드래" },
-    { "name": "삼삼드래", "nameEn": "Hydreigon", "category": "ultra", "fast": ["물기", "드래곤브레스"], "charged": ["잔혹한일격", "용의파동"], "note": "악/드래곤, 하이퍼리그 A티어" },
 
     // --- 활화르바 라인 (불카모스는 competitive) ---
     { "name": "활화르바", "nameEn": "Larvesta", "category": "dex", "fast": [], "charged": [], "note": "활화르바 → 불카모스 (사탕 400개, 극희귀)" },
@@ -918,7 +943,6 @@ const POKEMON_DATA = {
     // --- 플라베베 라인 ---
     { "name": "플라베베", "nameEn": "Flabébé", "category": "dex", "fast": [], "charged": [], "note": "5가지 꽃색, 플라베베 → 플라엣테 → 플라제스" },
     { "name": "플라엣테", "nameEn": "Floette", "category": "dex", "fast": [], "charged": [], "note": "플라베베 → 플라엣테 → 플라제스" },
-    { "name": "플라제스", "nameEn": "Florges", "category": "ultra", "fast": ["참", "요정의바람"], "charged": ["매지컬샤인", "사이코키네시스"], "note": "페어리, 하이퍼리그 A티어" },
 
     // --- 메이클 라인 ---
     { "name": "메이클", "nameEn": "Skiddo", "category": "trash", "fast": [], "charged": [], "note": "" },
@@ -977,8 +1001,7 @@ const POKEMON_DATA = {
 
     // --- 님피아 (이미 competitive) ---
 
-    // --- 데디캥 ---
-    { "name": "데덴네", "nameEn": "Dedenne", "category": "super", "fast": ["전기쇼크"], "charged": ["방전", "플레이라프"], "note": "전기/페어리, 슈퍼리그 A티어" },
+    // --- 데디캥 (데덴네는 슈퍼리그 섹션으로 이동) ---
 
     // --- 멜시 (이미 competitive) ---
 
@@ -1150,7 +1173,6 @@ const POKEMON_DATA = {
     { "name": "백솜모카", "nameEn": "Eldegoss", "category": "trash", "fast": [], "charged": [], "note": "풀" },
     { "name": "파라꼬", "nameEn": "Rookidee", "category": "dex", "fast": [], "charged": [], "note": "물깃 → 파크까마귀 → 아머까마귀" },
     { "name": "파크로우", "nameEn": "Corvisquire", "category": "dex", "fast": [], "charged": [], "note": "" },
-    { "name": "아머까오", "nameEn": "Corviknight", "category": ["ultra", "super"], "fast": ["에어슬래시", "강철날개"], "charged": ["브레이브버드", "아이언헤드"], "note": "비행/강철, 하이퍼/슈퍼리그 S티어" },
     { "name": "두루지벌레", "nameEn": "Blipbug", "category": "trash", "fast": [], "charged": [], "note": "두루지벌레 → 레돔벌레 → 이올브" },
     { "name": "레돔벌레", "nameEn": "Dottler", "category": "trash", "fast": [], "charged": [], "note": "" },
     { "name": "이올브", "nameEn": "Orbeetle", "category": "trash", "fast": [], "charged": [], "note": "벌레/에스퍼" },
@@ -1208,7 +1230,6 @@ const POKEMON_DATA = {
     { "name": "자마젠타", "nameEn": "Zamazenta", "category": "dex", "fast": [], "charged": [], "note": "격투, 전설 (방패왕 폼은 격투/강철)" },
     { "name": "무한다이노", "nameEn": "Eternatus", "category": "dex", "fast": [], "charged": [], "note": "독/드래곤, 전설 (GO 등장 미확인)" },
     { "name": "레지에레키", "nameEn": "Regieleki", "category": "dex", "fast": [], "charged": [], "note": "전기, 전설" },
-    { "name": "레지드래고", "nameEn": "Regidrago", "category": "ultra", "fast": ["드래곤브레스"], "charged": ["드래곤에너지", "바이스그립"], "note": "드래곤, 전설, 하이퍼리그 A티어, 엘리트TM 필요" },
 
     // ===== 9세대 (팔데아) Dex / Trash =====
     // --- 스타팅 ---
@@ -1217,7 +1238,6 @@ const POKEMON_DATA = {
     { "name": "마스카나", "nameEn": "Meowscarada", "category": "dex", "fast": [], "charged": [], "note": "풀/악" },
     { "name": "뜨아거", "nameEn": "Fuecoco", "category": "dex", "fast": [], "charged": [], "note": "뜨아거 → 파쪼옥 → 라우드본" },
     { "name": "악뜨거", "nameEn": "Crocalor", "category": "dex", "fast": [], "charged": [], "note": "뜨아거 → 파쪼옥 → 라우드본" },
-    { "name": "라우드본", "nameEn": "Skeledirge", "category": ["ultra", "super"], "fast": ["소각"], "charged": ["토치송", "섀도우볼"], "note": "불꽃/고스트, 하이퍼/슈퍼리그 S티어" },
     { "name": "꾸왁스", "nameEn": "Quaxly", "category": "dex", "fast": [], "charged": [], "note": "꾸왁스 → 웨이니발 → 웨이니발루" },
     { "name": "아꾸왁", "nameEn": "Quaxwell", "category": "dex", "fast": [], "charged": [], "note": "" },
     { "name": "웨이니발", "nameEn": "Quaquaval", "category": "dex", "fast": [], "charged": [], "note": "물/격투" },
@@ -1247,7 +1267,6 @@ const POKEMON_DATA = {
     { "name": "카디나르마", "nameEn": "Armarouge", "category": "dex", "fast": [], "charged": [], "note": "불꽃/에스퍼" },
     { "name": "파라블레이즈", "nameEn": "Ceruledge", "category": "dex", "fast": [], "charged": [], "note": "불꽃/고스트" },
     { "name": "빈나두", "nameEn": "Tadbulb", "category": "dex", "fast": [], "charged": [], "note": "타기털 → 번지털" },
-    { "name": "찌리배리", "nameEn": "Bellibolt", "category": "ultra", "fast": ["전기쇼크"], "charged": ["패러볼릭차지", "방전"], "note": "하이퍼리그 탑티어, 패러볼릭차지 버프" },
     { "name": "찌리비", "nameEn": "Wattrel", "category": "trash", "fast": [], "charged": [], "note": "퐁퐁자라 → 끼리자라" },
     { "name": "찌리비크", "nameEn": "Kilowattrel", "category": "trash", "fast": [], "charged": [], "note": "전기/비행" },
     { "name": "오라티프", "nameEn": "Maschiff", "category": "trash", "fast": [], "charged": [], "note": "치잉 → 가디불" },
@@ -1281,7 +1300,6 @@ const POKEMON_DATA = {
     { "name": "킬라플로르", "nameEn": "Glimmora", "category": "dex", "fast": [], "charged": [], "note": "바위/독" },
     { "name": "망망이", "nameEn": "Greavard", "category": "dex", "fast": [], "charged": [], "note": "여포사냥 → 파피사냥" },
     { "name": "묘두기", "nameEn": "Houndstone", "category": "dex", "fast": [], "charged": [], "note": "고스트" },
-    { "name": "꼬이밍고", "nameEn": "Flamigo", "category": "ultra", "fast": ["더블킥", "윙어택"], "charged": ["어퍼핸드", "브레이브버드"], "note": "비행/격투, 하이퍼리그 S티어" },
     { "name": "터벅고래", "nameEn": "Cetoddle", "category": "dex", "fast": [], "charged": [], "note": "케트라 → 고래돌퍼" },
     { "name": "우락고래", "nameEn": "Cetitan", "category": "dex", "fast": [], "charged": [], "note": "얼음" },
     { "name": "가비루사", "nameEn": "Veluza", "category": "trash", "fast": [], "charged": [], "note": "물/에스퍼" },
@@ -1301,9 +1319,7 @@ const POKEMON_DATA = {
     { "name": "거북왕", "nameEn": "Blastoise", "category": "dex", "fast": [], "charged": [], "note": "꼬부기 → 어니부기 → 거북왕, 물 어태커, 메가 진화 가능" },
     { "name": "독침붕", "nameEn": "Beedrill", "category": "dex", "fast": [], "charged": [], "note": "뿔충이 → 딱충이 → 독침붕, 메가 진화 가능" },
     { "name": "피죤투", "nameEn": "Pidgeot", "category": "dex", "fast": [], "charged": [], "note": "구구 → 피죤 → 피죤투, 메가 진화 가능" },
-    { "name": "푸크린", "nameEn": "Wigglytuff", "category": "super", "fast": ["참"], "charged": ["아이시윈드", "디사밍보이스"], "note": "노말/페어리, 슈퍼리그 S티어" },
     { "name": "라플레시아", "nameEn": "Vileplume", "category": "dex", "fast": [], "charged": [], "note": "뚜벅쵸 → 냄새꼬 → 라플레시아 (풀/독)" },
-    { "name": "강챙이", "nameEn": "Poliwrath", "category": ["ultra", "super"], "fast": ["카운터", "머드샷"], "charged": ["열탕", "아이시윈드"], "note": "물/격투, 하이퍼리그 S티어, 슈퍼리그 A티어" },
     { "name": "후딘", "nameEn": "Alakazam", "category": "dex", "fast": [], "charged": [], "note": "케이시 → 윤겔라 → 후딘, 에스퍼 어태커, 메가 진화 가능" },
     { "name": "우츠보트", "nameEn": "Victreebel", "category": "dex", "fast": [], "charged": [], "note": "모다피 → 우츠동 → 우츠보트 (풀/독)" },
     { "name": "쁘사이저", "nameEn": "Pinsir", "category": "dex", "fast": [], "charged": [], "note": "벌레, 메가 진화 가능" },
@@ -1346,7 +1362,6 @@ const POKEMON_DATA = {
     { "name": "크리만", "nameEn": "Druddigon", "category": "dex", "fast": [], "charged": [], "note": "드래곤, 진화 없음" },
     { "name": "골루그", "nameEn": "Golurk", "category": "dex", "fast": [], "charged": [], "note": "골릿 → 골루그 (땅/고스트)" },
     { "name": "버랜지나", "nameEn": "Mandibuzz", "category": "dex", "fast": [], "charged": [], "note": "벌차이 → 버랜지나 (악/비행)" },
-    { "name": "비리디온", "nameEn": "Virizion", "category": "ultra", "fast": ["더블킥"], "charged": ["리프블레이드", "성스러운검"], "note": "전설, 풀/격투, 하이퍼리그 A티어, 엘리트TM 추천" },
     { "name": "큐레무", "nameEn": "Kyurem", "category": "dex", "fast": [], "charged": [], "note": "전설, 드래곤/얼음" },
     { "name": "메로엣타", "nameEn": "Meloetta", "category": "dex", "fast": [], "charged": [], "note": "환상, 노말/에스퍼, 스텝폼은 노말/격투" },
     { "name": "파르빗", "nameEn": "Bunnelby", "category": "trash", "fast": [], "charged": [], "note": "파르빗 → 파르토" },
