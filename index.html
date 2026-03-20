@@ -202,6 +202,182 @@
 
   @media (max-width: 360px) {
     .card-list { grid-template-columns: repeat(2, 1fr); }
+    .card-stat-row { display: none; }
+    .card-evolution { display: none; }
+    .type-filters { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  /* ===== 타입 필터 ===== */
+  .type-filter-toggle {
+    font-size: 0.75rem;
+    color: #777;
+    cursor: pointer;
+    padding: 2px 0 8px;
+    user-select: none;
+  }
+  .type-filter-toggle:hover { color: #aaa; }
+
+  .type-filters {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4px;
+    padding: 0 0 12px;
+  }
+  .type-filters.collapsed { display: none; }
+
+  .type-filter-btn {
+    padding: 4px 2px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .type-filter-btn.active { opacity: 1; outline: 2px solid rgba(255,255,255,0.7); outline-offset: 1px; }
+  .type-filter-btn:not(.active) { opacity: 0.5; }
+
+  /* 타입 필터 전체 버튼 */
+  .type-all-btn { background: #444; color: #fff; }
+
+  /* ===== 타입 뱃지 (카드 내) ===== */
+  .card-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin: 4px 0 2px;
+  }
+
+  .type-badge {
+    display: inline-block;
+    padding: 1px 5px;
+    border-radius: 6px;
+    font-size: 0.55rem;
+    font-weight: 600;
+  }
+
+  /* 타입별 색상 - 밝은 배경 타입은 어두운 글씨 */
+  .type-노말    { background: #A8A878; color: #333; }
+  .type-불꽃    { background: #F08030; color: #fff; }
+  .type-물      { background: #6890F0; color: #fff; }
+  .type-풀      { background: #78C850; color: #333; }
+  .type-전기    { background: #F8D030; color: #333; }
+  .type-얼음    { background: #98D8D8; color: #333; }
+  .type-격투    { background: #C03028; color: #fff; }
+  .type-독      { background: #A040A0; color: #fff; }
+  .type-땅      { background: #E0C068; color: #333; }
+  .type-비행    { background: #A890F0; color: #fff; }
+  .type-에스퍼  { background: #F85888; color: #fff; }
+  .type-벌레    { background: #A8B820; color: #333; }
+  .type-바위    { background: #B8A038; color: #fff; }
+  .type-고스트  { background: #705898; color: #fff; }
+  .type-드래곤  { background: #7038F8; color: #fff; }
+  .type-악      { background: #705848; color: #fff; }
+  .type-강철    { background: #B8B8D0; color: #333; }
+  .type-페어리  { background: #EE99AC; color: #333; }
+  .type-unknown { background: #68A090; color: #fff; }
+
+  /* 필터 버튼도 타입 색상 공유 */
+  .type-filter-btn.type-노말    { background: #A8A878; color: #333; }
+  .type-filter-btn.type-불꽃    { background: #F08030; color: #fff; }
+  .type-filter-btn.type-물      { background: #6890F0; color: #fff; }
+  .type-filter-btn.type-풀      { background: #78C850; color: #333; }
+  .type-filter-btn.type-전기    { background: #F8D030; color: #333; }
+  .type-filter-btn.type-얼음    { background: #98D8D8; color: #333; }
+  .type-filter-btn.type-격투    { background: #C03028; color: #fff; }
+  .type-filter-btn.type-독      { background: #A040A0; color: #fff; }
+  .type-filter-btn.type-땅      { background: #E0C068; color: #333; }
+  .type-filter-btn.type-비행    { background: #A890F0; color: #fff; }
+  .type-filter-btn.type-에스퍼  { background: #F85888; color: #fff; }
+  .type-filter-btn.type-벌레    { background: #A8B820; color: #333; }
+  .type-filter-btn.type-바위    { background: #B8A038; color: #fff; }
+  .type-filter-btn.type-고스트  { background: #705898; color: #fff; }
+  .type-filter-btn.type-드래곤  { background: #7038F8; color: #fff; }
+  .type-filter-btn.type-악      { background: #705848; color: #fff; }
+  .type-filter-btn.type-강철    { background: #B8B8D0; color: #333; }
+  .type-filter-btn.type-페어리  { background: #EE99AC; color: #333; }
+
+  /* ===== 스탯 바 (컴팩트형) ===== */
+  .card-stats { margin: 3px 0; }
+
+  .card-stat-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.55rem;
+    margin: 2px 0;
+  }
+
+  .stat-label { color: #555; width: 10px; flex-shrink: 0; }
+  .stat-track {
+    flex: 1;
+    height: 4px;
+    background: #2a2a3e;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .stat-fill { height: 100%; border-radius: 2px; }
+  .stat-atk  { background: #e94560; }
+  .stat-def  { background: #4a90d9; }
+  .stat-sta  { background: #27ae60; }
+  .stat-val  { color: #666; width: 22px; text-align: right; flex-shrink: 0; font-size: 0.5rem; }
+
+  /* ===== maxCP ===== */
+  .card-cp {
+    font-size: 0.58rem;
+    color: #777;
+    margin-left: 4px;
+  }
+
+  /* ===== 진화 정보 ===== */
+  .card-evolution {
+    font-size: 0.6rem;
+    color: #666;
+    margin-top: 2px;
+  }
+
+  /* ===== rarity 뱃지 (절대위치) ===== */
+  .badge-legendary {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    padding: 1px 5px;
+    border-radius: 6px;
+    font-size: 0.55rem;
+    font-weight: 700;
+    background: #f5a623;
+    color: #fff;
+    pointer-events: none;
+  }
+
+  .badge-mythic {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    padding: 1px 5px;
+    border-radius: 6px;
+    font-size: 0.55rem;
+    font-weight: 700;
+    background: #9b59b6;
+    color: #fff;
+    pointer-events: none;
+  }
+
+  /* ===== 강화 우선순위 점수 ===== */
+  .priority-score {
+    font-size: 0.6rem;
+    color: #f5a623;
+    margin-top: 1px;
+  }
+
+  /* ===== 스피너 ===== */
+  .spinner {
+    text-align: center;
+    padding: 20px 0;
+    color: #555;
+    font-size: 0.85rem;
   }
 </style>
 </head>
@@ -223,7 +399,11 @@
     <button class="filter-btn" data-cat="trash">버림</button>
   </div>
 
+  <div id="type-filter-toggle" class="type-filter-toggle">타입 필터 ▼</div>
+  <div id="type-filters" class="type-filters collapsed"></div>
+
   <div class="count" id="count"></div>
+  <div id="spinner" class="spinner" style="display:none;">로딩 중...</div>
   <div class="card-list" id="list"></div>
 </div>
 
@@ -240,28 +420,99 @@ const CATEGORY_LABELS = {
   trash: '버림'
 };
 
+// 스탯 최대값 기준 (전체 포켓몬GO 기준)
+const MAX_ATTACK = 345, MAX_DEFENSE = 396, MAX_STAMINA = 496;
+
+// 허용된 타입명 화이트리스트 (CSS 클래스명 인젝션 방지)
+const VALID_TYPES = new Set([
+  '노말','불꽃','물','풀','전기','얼음','격투','독',
+  '땅','비행','에스퍼','벌레','바위','고스트','드래곤',
+  '악','강철','페어리'
+]);
+
 let allPokemon = [];
+let apiCache = {};
 let currentCat = 'all';
 let currentQuery = '';
+let currentType = '';
+let typeFiltersCollapsed = true;
 
-function loadData() {
-  allPokemon = POKEMON_DATA.pokemon;
+// ===== 데이터 로딩 =====
+async function loadData() {
+  const spinner = document.getElementById('spinner');
+  spinner.style.display = 'block';
+  try {
+    const res = await fetch('api-cache.json');
+    if (res.ok) apiCache = await res.json();
+  } catch (e) {
+    // api-cache.json 없어도 기존 data.js만으로 동작 (graceful fallback)
+  } finally {
+    spinner.style.display = 'none';
+  }
+
+  // data.js 데이터에 apiData 머지 (nameEn 직접 키로 사용)
+  allPokemon = POKEMON_DATA.pokemon.map(p => ({
+    ...p,
+    apiData: apiCache[p.nameEn] || null
+  }));
+
+  buildTypeFilters();
   render();
 }
 
+// ===== 타입 필터 버튼 동적 생성 =====
+function buildTypeFilters() {
+  const types = new Set();
+  allPokemon.forEach(p => (p.apiData?.types || []).forEach(t => {
+    if (VALID_TYPES.has(t)) types.add(t);
+  }));
+
+  if (types.size === 0) {
+    document.getElementById('type-filter-toggle').style.display = 'none';
+    return;
+  }
+
+  const sortedTypes = Array.from(types).sort();
+  const container = document.getElementById('type-filters');
+  container.innerHTML = [
+    `<button class="type-filter-btn type-all-btn active" data-type="">전체</button>`,
+    ...sortedTypes.map(t =>
+      `<button class="type-filter-btn type-${t}" data-type="${t}">${t}</button>`
+    )
+  ].join('');
+}
+
+// ===== 렌더링 =====
 function render() {
   const list = document.getElementById('list');
   const countEl = document.getElementById('count');
   const q = currentQuery.toLowerCase();
 
-  const filtered = allPokemon.filter(p => {
+  let filtered = allPokemon.filter(p => {
     const cats = Array.isArray(p.category) ? p.category : [p.category];
     const matchCat = currentCat === 'all' || cats.includes(currentCat);
     const matchSearch = !q ||
       p.name.toLowerCase().includes(q) ||
       p.nameEn.toLowerCase().includes(q);
-    return matchCat && matchSearch;
+    // 타입 필터: currentType 선택 시 apiData 없는 항목은 숨김
+    const matchType = !currentType ||
+      (p.apiData?.types?.includes(currentType) ?? false);
+    return matchCat && matchSearch && matchType;
   });
+
+  // powerup 탭: 점수 내림차순 정렬 (apiData 없으면 원본 순서 유지하며 뒤로)
+  if (currentCat === 'powerup') {
+    filtered = filtered.map((p, i) => ({ p, i })).sort((a, b) => {
+      const hasA = a.p.apiData !== null;
+      const hasB = b.p.apiData !== null;
+      if (!hasA && !hasB) return a.i - b.i;
+      if (!hasA) return 1;
+      if (!hasB) return -1;
+      const scoreA = a.p.apiData.baseAttack * 0.5 + a.p.apiData.baseDefense * 0.3 + a.p.apiData.baseStamina * 0.2;
+      const scoreB = b.p.apiData.baseAttack * 0.5 + b.p.apiData.baseDefense * 0.3 + b.p.apiData.baseStamina * 0.2;
+      return scoreB - scoreA;
+    }).map(({ p }) => p);
+  }
 
   countEl.textContent = `${filtered.length}마리`;
 
@@ -270,19 +521,83 @@ function render() {
     return;
   }
 
-  list.innerHTML = filtered.map(p => `
+  list.innerHTML = filtered.map(p => renderCard(p)).join('');
+}
+
+// ===== 카드 렌더 =====
+function renderCard(p) {
+  const cats = Array.isArray(p.category) ? p.category : [p.category];
+  const api = p.apiData;
+
+  // rarity 뱃지
+  let rarityBadge = '';
+  if (api?.rarity === 'POKEMON_RARITY_LEGENDARY') {
+    rarityBadge = '<span class="badge-legendary">전설</span>';
+  } else if (api?.rarity === 'POKEMON_RARITY_MYTHIC') {
+    rarityBadge = '<span class="badge-mythic">환상</span>';
+  }
+
+  // 카테고리 뱃지
+  const catBadges = cats.map(c => `<span class="badge badge-${c}">${CATEGORY_LABELS[c]}</span>`).join(' ');
+
+  // 강화 우선순위 점수
+  let scoreHtml = '';
+  if (currentCat === 'powerup' && api) {
+    const score = Math.round(api.baseAttack * 0.5 + api.baseDefense * 0.3 + api.baseStamina * 0.2);
+    scoreHtml = `<div class="priority-score">점수 ${score}</div>`;
+  }
+
+  // maxCP
+  const cpHtml = api?.maxCP ? `<span class="card-cp">CP ${api.maxCP.toLocaleString()}</span>` : '';
+
+  // 타입 뱃지
+  let typesHtml = '';
+  if (api?.types?.length > 0) {
+    typesHtml = `<div class="card-types">${
+      api.types.map(t => {
+        const cls = VALID_TYPES.has(t) ? `type-${t}` : 'type-unknown';
+        return `<span class="type-badge ${cls}">${escapeHtml(t)}</span>`;
+      }).join('')
+    }</div>`;
+  }
+
+  // 스탯 바
+  let statsHtml = '';
+  if (api?.baseAttack) {
+    const atkPct = Math.round(api.baseAttack / MAX_ATTACK * 100);
+    const defPct = Math.round(api.baseDefense / MAX_DEFENSE * 100);
+    const staPct = Math.round(api.baseStamina / MAX_STAMINA * 100);
+    statsHtml = `<div class="card-stats">
+      <div class="card-stat-row"><span class="stat-label">공</span><div class="stat-track"><div class="stat-fill stat-atk" style="width:${atkPct}%"></div></div><span class="stat-val">${api.baseAttack}</span></div>
+      <div class="card-stat-row"><span class="stat-label">방</span><div class="stat-track"><div class="stat-fill stat-def" style="width:${defPct}%"></div></div><span class="stat-val">${api.baseDefense}</span></div>
+      <div class="card-stat-row"><span class="stat-label">체</span><div class="stat-track"><div class="stat-fill stat-sta" style="width:${staPct}%"></div></div><span class="stat-val">${api.baseStamina}</span></div>
+    </div>`;
+  }
+
+  // 진화 정보
+  let evolutionHtml = '';
+  if (api?.nextEvolutions?.length > 0) {
+    evolutionHtml = `<div class="card-evolution">→ ${api.nextEvolutions.map(e => escapeHtml(e)).join(', ')}</div>`;
+  }
+
+  return `
     <div class="card">
+      ${rarityBadge}
       <div class="card-header">
         <div class="card-info">
           <div class="card-name">${escapeHtml(p.name)}</div>
-          <div class="card-name-en">${escapeHtml(p.nameEn)}</div>
+          <div class="card-name-en">${escapeHtml(p.nameEn)}${cpHtml}</div>
+          ${scoreHtml}
         </div>
-        ${(Array.isArray(p.category) ? p.category : [p.category]).map(c => `<span class="badge badge-${c}">${CATEGORY_LABELS[c]}</span>`).join(' ')}
+        ${catBadges}
       </div>
+      ${typesHtml}
+      ${statsHtml}
+      ${evolutionHtml}
       ${renderMoves(p)}
       ${p.note ? `<div class="card-note">${escapeHtml(p.note)}</div>` : ''}
     </div>
-  `).join('');
+  `;
 }
 
 function renderMoves(p) {
@@ -311,13 +626,15 @@ function escapeHtml(text) {
   return div.innerHTML;
 }
 
+// ===== 이벤트 리스너 =====
+
 // 검색
 document.getElementById('search').addEventListener('input', e => {
   currentQuery = e.target.value;
   render();
 });
 
-// 필터 버튼
+// 카테고리 필터
 document.getElementById('filters').addEventListener('click', e => {
   const btn = e.target.closest('.filter-btn');
   if (!btn) return;
@@ -325,6 +642,23 @@ document.getElementById('filters').addEventListener('click', e => {
   btn.classList.add('active');
   currentCat = btn.dataset.cat;
   render();
+});
+
+// 타입 필터 (별도 컨테이너, 별도 핸들러)
+document.getElementById('type-filters').addEventListener('click', e => {
+  const btn = e.target.closest('.type-filter-btn');
+  if (!btn) return;
+  document.querySelectorAll('.type-filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentType = btn.dataset.type;
+  render();
+});
+
+// 타입 필터 접기/펼치기
+document.getElementById('type-filter-toggle').addEventListener('click', () => {
+  typeFiltersCollapsed = !typeFiltersCollapsed;
+  document.getElementById('type-filters').classList.toggle('collapsed', typeFiltersCollapsed);
+  document.getElementById('type-filter-toggle').textContent = typeFiltersCollapsed ? '타입 필터 ▼' : '타입 필터 ▲';
 });
 
 loadData();
